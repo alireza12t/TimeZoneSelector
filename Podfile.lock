@@ -1,20 +1,16 @@
 PODS:
-  - Spring (1.0.5)
   - TimeZonePicker (1.2.0)
 
 DEPENDENCIES:
-  - Spring
   - TimeZonePicker
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Spring
+  trunk:
     - TimeZonePicker
 
 SPEC CHECKSUMS:
-  Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
   TimeZonePicker: 8ed73f29ccbb2fca75855c0f3d7696c47abf5a90
 
-PODFILE CHECKSUM: c9a052547af4e77a117005e3da9e87017bfea89c
+PODFILE CHECKSUM: e71c6f8189ef1edbb7090fe64d0e51749f2a7960
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.9.1

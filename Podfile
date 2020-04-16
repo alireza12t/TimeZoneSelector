@@ -5,6 +5,5 @@ target 'HomeTask' do
   use_frameworks!
 
   # Pods for HomeTask
-  pod 'Spring'
   pod 'TimeZonePicker'
 end

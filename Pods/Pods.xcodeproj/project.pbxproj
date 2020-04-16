@@ -3,396 +3,243 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		000761767BFE662D444C172EF387BDFD /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43851457FC969664B5410EE01E2E5A1 /* SpringImageView.swift */; };
-		02C1877B16E49882FF307D90170B27B1 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3472C946CD4061761C698D1210023B73 /* SoundPlayer.swift */; };
-		0435BBDD10E4CBC3CF40F0058FFD3C4C /* TimeZonePickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD58BB10A58BB5A492753596B2BA9CC /* TimeZonePickerDataSource.swift */; };
-		04CFFACD8123183C2C6C553BAD446A70 /* TimeZonePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8CA367B8077E63DE3D3F4A8FD6417 /* TimeZonePickerDelegate.swift */; };
-		07DEAB65B059A853958463375A4A0F58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		0B9445D0151742B5C584FE29AE2D9E72 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B6593DE68365EC0405BA7AA6757EFE /* DesignableImageView.swift */; };
-		0E00F51B6D0FF5F733FE39CBF6AD3FCB /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110B1BCF09D352DD80D1CED0D6A86DA /* Misc.swift */; };
-		156F2B583BD7888B07FCCBC6ED1DDA15 /* CityCountryTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A718592DECE06E084B32B1A2D84FC /* CityCountryTimeZone.swift */; };
-		24C7C006B9332B4AFED2B32ED12CBAB6 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B079EFD017FB44D6D7BDC239DA38227B /* SpringLabel.swift */; };
-		2659016F557D352AF80AC4AB0D304D46 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18580968702C92397098C189181A83 /* AutoTextView.swift */; };
-		2921101C93F248D6FBA541588BB5DBA9 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38CE6051B86FC03C6F9139B436B764 /* UnwindSegue.swift */; };
-		40A151B3F49473A465FC321C5C7212B4 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EC57D7F9F6414593A95F0322477E4 /* SpringButton.swift */; };
-		433C0340B903B7658A0D3529CC89D523 /* Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 414A39A96EA79192890168290850BE0D /* Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47EDC8A1BA01ADB3328A091F14B6EC35 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30FFAEC794E765F784762355B847A54 /* DesignableView.swift */; };
-		4C91F2FDA1B8E15F02AF9F7A1AA63C62 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B2FED14F99EFB11FA70DC995A01E8E /* BlurView.swift */; };
-		5059DB5932976976612FB12A4DA278BB /* TimeZonePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8FD422522B47E6E30215071E6CFFAA6 /* TimeZonePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50913910038BBFEA4763C12FCC4B2F42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		5439A5631AD05F97C2BC0326762B74CB /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C15475B258CFE0170BE7E7B9D36341 /* DesignableButton.swift */; };
-		5459C84CDB2D0645C2B806308B4C24D5 /* Pods-HomeTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E495D85AB921705DA031AC4C962336 /* Pods-HomeTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6928D351551C90A0F2D7B80E4FBCFDE8 /* TimeZonePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3DCA481290D625489C7D4A77A5F47C /* TimeZonePicker-dummy.m */; };
-		7176F8EE504DF356D4C504CBBACC04E0 /* Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07710119A250299BFC3DEE0EC8AE6159 /* Spring-dummy.m */; };
-		75641F4F83A4F3AE7ACBBA7BB0870FF9 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F6C099532AEAA3E0C35638B3343D7 /* SpringView.swift */; };
-		7D48A5F40EDF79032EAAF04050B4EF60 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA090E245851F9E1A8AE32E1B203E826 /* KeyboardLayoutConstraint.swift */; };
-		7E8B4DEB53D6EFCF096253772DDAE17D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		86B8C233C0EBE7A05BB59E44BC70A9A2 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9BCFE5A120B8FF80007D75E3D45C17 /* DesignableLabel.swift */; };
-		895F5F8222BE13922E49F39C5CB60951 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548A18865ADD2B3F2B42E714640D426A /* LoadingView.xib */; };
-		9D8CDA8AB00E9ABFF758F9237B89174B /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BC0785CD61C57FFC0C6E04D7223B1 /* AsyncButton.swift */; };
-		AE6B2F95383B42DF2933B6CA7B3B71A3 /* TimeZonePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4479B16DE896705F27C39D3CEE121C9D /* TimeZonePicker.storyboard */; };
-		B323616EB3ED64F6E282D6C25FFD8FB6 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6CBC1D69F8DBD2811F0D176028697E /* AsyncImageView.swift */; };
-		B3C640DD00716A30A8B7D5F7F22A2C31 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605044AE6689FD851770E17D11FFFAA /* ImageLoader.swift */; };
-		B905665F4D16652F1305912F09E8B64B /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9C8D1F6BF722CC6E3808F6FF30E0F /* TransitionManager.swift */; };
-		BFB4F978798A6AE74BAD5B01972C5E8E /* TimeZonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF7F6A8392C676CDC75E299229D61F8 /* TimeZonePickerViewController.swift */; };
-		BFC158CF830F2AD23C380DE9ED92450F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A4020833E5A37F36C23F5AE04D637 /* LoadingView.swift */; };
-		C677FAF1170CDE974B01BFB51DE3570F /* Pods-HomeTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 407867B11FA76D001533FC849941D115 /* Pods-HomeTask-dummy.m */; };
-		CC19533A5935D52D67D8D1310EB64E07 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EB9C299759F9EB50EB9D7119E6B0F /* SpringAnimation.swift */; };
-		CE44E4AB50E91979AA152C2984E722B4 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C55AF0F246F574FC1F90D7D5D4F545 /* DesignableTextField.swift */; };
-		D1E31699608360FDE7E503496DFD8E6E /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FA8E8486F218FE75CD9740710D9CF1 /* Spring.swift */; };
-		D25D573C50CD77379FE31B7BCD233736 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3A59B28882BED05E6EF942F2B81CD /* SpringTextField.swift */; };
-		D47C41B29F2FEAB4FE386072AD2043F0 /* CitiesAndTimeZones.json in Resources */ = {isa = PBXBuildFile; fileRef = F97564C36148558FA922BBC1E40691A4 /* CitiesAndTimeZones.json */; };
-		D7762649AB6E4804DEFC95984AC72010 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CF4478FA383BA4975E509B44EDA69 /* Images.xcassets */; };
-		DDB98C2F36125252991ECA4C955CB6E9 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F28CE7001CF1DAC746B6A350E3071 /* TransitionZoom.swift */; };
-		EB2A59BA5D16E5BC40A9208394331876 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4C2DF173853D9A362400F6E06464E /* DesignableTextView.swift */; };
-		EB8195BA13CF6785926DAF20A5614989 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDDF5D7E68B41B7D0CE2A5D98BFFCB7 /* SpringTextView.swift */; };
-		EC0F9E2F515F1118BE8820F8181EF9B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
-		EDA988B892A91C2B6D783D06235930A8 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB80C187A424BB7B35FCD0F31101F963 /* DesignableTabBarController.swift */; };
+		3B8E5E375FAF798E1F36FEEF92BCA597 /* TimeZonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5239EF25B7173D84693E26FFA77C15 /* TimeZonePickerViewController.swift */; };
+		475691128B3B51EFDADB294899844DF3 /* TimeZonePickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001B5C93B6779B8BE80807C7AFE8A127 /* TimeZonePickerDataSource.swift */; };
+		59E9DB7C9DC9293D44F0EF65A59BD092 /* TimeZonePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE19DC04A45F0CEFE0204EC66E68BD0 /* TimeZonePicker-dummy.m */; };
+		6EB1F1D49406DD340616C7176D2A2994 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		73EC77ADBCBF3DBFEDE60C46E5D76D5A /* TimeZonePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7836EC78F8C17B739895E84B6153BA10 /* TimeZonePicker.storyboard */; };
+		872DB3818CC377BD28AC81A21D17CCFA /* CityCountryTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86560B64FDD65498C9FC4C9CBADF4196 /* CityCountryTimeZone.swift */; };
+		8EE10781CD4816C0610A364A093E9504 /* CitiesAndTimeZones.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D7F6BDF0903DB266EBA173126B098D /* CitiesAndTimeZones.json */; };
+		A5D23C0A7807504762C158F1835799CD /* Pods-HomeTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CEBF0F39BC9237DB6C0A7575941432 /* Pods-HomeTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B38A9B3101E438BE392289373767B554 /* TimeZonePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDB0AC11C7804740359D628C1F489 /* TimeZonePickerDelegate.swift */; };
+		BE9CE67585FF0086FDBC959F4A1A39B2 /* TimeZonePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 470157A5489A8EE3BFA45D2EB805857F /* TimeZonePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC2C1335B7A3CDCF51366F705CBF96D9 /* Pods-HomeTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3699A8626A9AE16343FC25B619271911 /* Pods-HomeTask-dummy.m */; };
+		DC34C818D8A66D8DAA40D371BCC1E8C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		DD386AD1F5CBADAAC7969E8A792DF36E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C027E5363EE0DF5A8DEAB2550F5E0B8F /* PBXContainerItemProxy */ = {
+		039C4A23C28267C3FF3A3BF16ACE1CF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F61D3DD6551E5C3680DE9F8DE9F52EAF;
-			remoteInfo = Spring;
-		};
-		D2C7853DA590F47D07F28D63B46E9FF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C8E45149CE5B3BEC80016B8677732488;
+			remoteGlobalIDString = DE7558C5F434D4CDA7B7DF1DD7E8F9F0;
 			remoteInfo = TimeZonePicker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07710119A250299BFC3DEE0EC8AE6159 /* Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spring-dummy.m"; sourceTree = "<group>"; };
-		0F4BC0785CD61C57FFC0C6E04D7223B1 /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
-		13E495D85AB921705DA031AC4C962336 /* Pods-HomeTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeTask-umbrella.h"; sourceTree = "<group>"; };
-		1DD58BB10A58BB5A492753596B2BA9CC /* TimeZonePickerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZonePickerDataSource.swift; path = Classes/TimeZonePickerDataSource.swift; sourceTree = "<group>"; };
-		238673FB1D704F2536CA119ABF3FD8E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24B6593DE68365EC0405BA7AA6757EFE /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
-		28A4A04839BFD1F9CAE3E91A1EBA3ACA /* Pods-HomeTask-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeTask-resources.sh"; sourceTree = "<group>"; };
-		2C2A4020833E5A37F36C23F5AE04D637 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
-		2C7CF4478FA383BA4975E509B44EDA69 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
-		3472C946CD4061761C698D1210023B73 /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
-		3CA4C2DF173853D9A362400F6E06464E /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
-		407867B11FA76D001533FC849941D115 /* Pods-HomeTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeTask-dummy.m"; sourceTree = "<group>"; };
-		414A39A96EA79192890168290850BE0D /* Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-umbrella.h"; sourceTree = "<group>"; };
-		430D8990C53B93167535B579EA27B109 /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spring.framework; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4479B16DE896705F27C39D3CEE121C9D /* TimeZonePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TimeZonePicker.storyboard; path = Resources/TimeZonePicker.storyboard; sourceTree = "<group>"; };
-		4A4A718592DECE06E084B32B1A2D84FC /* CityCountryTimeZone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CityCountryTimeZone.swift; path = Classes/CityCountryTimeZone.swift; sourceTree = "<group>"; };
-		51AB4A1F3A79DC86897E41CA449345B7 /* Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.xcconfig; sourceTree = "<group>"; };
-		548A18865ADD2B3F2B42E714640D426A /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
-		5AF7F6A8392C676CDC75E299229D61F8 /* TimeZonePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZonePickerViewController.swift; path = Classes/TimeZonePickerViewController.swift; sourceTree = "<group>"; };
-		5CDDD17C870585FFC85FF2AF36022209 /* Pods-HomeTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HomeTask.modulemap"; sourceTree = "<group>"; };
-		64B2FED14F99EFB11FA70DC995A01E8E /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
-		6DDDF5D7E68B41B7D0CE2A5D98BFFCB7 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
-		74707F4C4A13A8D85DFFBC4BEE4DD3F2 /* TimeZonePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TimeZonePicker.modulemap; sourceTree = "<group>"; };
-		85D9C8D1F6BF722CC6E3808F6FF30E0F /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
-		88F9F28ED5B3DB9054ABCC822F6EB555 /* Pods-HomeTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeTask-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8C999FB07C41F2A74F8A98D184CB9F73 /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
-		8F2DA3CB334BFDF1C79B33821B57D1B7 /* Pods-HomeTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeTask-acknowledgements.plist"; sourceTree = "<group>"; };
-		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B18580968702C92397098C189181A83 /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
-		A30FFAEC794E765F784762355B847A54 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
-		A43851457FC969664B5410EE01E2E5A1 /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
-		A8BE390D9D1030E1ED2CA848912752C2 /* Pods-HomeTask-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeTask-frameworks.sh"; sourceTree = "<group>"; };
-		A980676486588F3CB5369970213504EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA0E5FFC8F117CECA1E416B9469D21AB /* Pods-HomeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeTask.release.xcconfig"; sourceTree = "<group>"; };
-		AC5F6C099532AEAA3E0C35638B3343D7 /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
-		AC9EC57D7F9F6414593A95F0322477E4 /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
-		ADA8CA367B8077E63DE3D3F4A8FD6417 /* TimeZonePickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZonePickerDelegate.swift; path = Classes/TimeZonePickerDelegate.swift; sourceTree = "<group>"; };
-		B079EFD017FB44D6D7BDC239DA38227B /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
-		BB37D3D2F78B4903B8CB979C4322D373 /* Pods_HomeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeTask.framework; path = "Pods-HomeTask.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C5C55AF0F246F574FC1F90D7D5D4F545 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
-		C7C15475B258CFE0170BE7E7B9D36341 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
-		CA38CE6051B86FC03C6F9139B436B764 /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
-		CB3DCA481290D625489C7D4A77A5F47C /* TimeZonePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TimeZonePicker-dummy.m"; sourceTree = "<group>"; };
-		CB80C187A424BB7B35FCD0F31101F963 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
-		CB9BCFE5A120B8FF80007D75E3D45C17 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
-		CE6EB9C299759F9EB50EB9D7119E6B0F /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
-		D27F28CE7001CF1DAC746B6A350E3071 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
-		D2B536DA64D6659B95F0478C9C881DAE /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Spring.modulemap; sourceTree = "<group>"; };
-		D605044AE6689FD851770E17D11FFFAA /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
-		D8FD422522B47E6E30215071E6CFFAA6 /* TimeZonePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TimeZonePicker-umbrella.h"; sourceTree = "<group>"; };
-		DA090E245851F9E1A8AE32E1B203E826 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
-		DB8392ADD271EB636FC4035BF27E05B2 /* TimeZonePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TimeZonePicker.framework; path = TimeZonePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E033545B0A5331BE5C62FF7795BE1AE6 /* Pods-HomeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeTask.debug.xcconfig"; sourceTree = "<group>"; };
-		E0FA8E8486F218FE75CD9740710D9CF1 /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
-		E49813BF08CDB9F68AB3F062422F819C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECF5B8BAAE389123B7270A609C5BC67B /* TimeZonePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TimeZonePicker-prefix.pch"; sourceTree = "<group>"; };
-		EE6CBC1D69F8DBD2811F0D176028697E /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
-		F110B1BCF09D352DD80D1CED0D6A86DA /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
-		F2F3375EAC0D053FB7523250A118433A /* TimeZonePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TimeZonePicker.xcconfig; sourceTree = "<group>"; };
-		F4D3A59B28882BED05E6EF942F2B81CD /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
-		F97564C36148558FA922BBC1E40691A4 /* CitiesAndTimeZones.json */ = {isa = PBXFileReference; includeInIndex = 1; name = CitiesAndTimeZones.json; path = Resources/CitiesAndTimeZones.json; sourceTree = "<group>"; };
+		001B5C93B6779B8BE80807C7AFE8A127 /* TimeZonePickerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZonePickerDataSource.swift; path = Classes/TimeZonePickerDataSource.swift; sourceTree = "<group>"; };
+		06A51E6ACDE239366E204F906F676B50 /* Pods-HomeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeTask.release.xcconfig"; sourceTree = "<group>"; };
+		0879D51F9B1915A67DFD2FF83E9792C9 /* Pods-HomeTask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeTask-Info.plist"; sourceTree = "<group>"; };
+		0A5239EF25B7173D84693E26FFA77C15 /* TimeZonePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZonePickerViewController.swift; path = Classes/TimeZonePickerViewController.swift; sourceTree = "<group>"; };
+		0BE19DC04A45F0CEFE0204EC66E68BD0 /* TimeZonePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TimeZonePicker-dummy.m"; sourceTree = "<group>"; };
+		0E963BEBCF860E2D8F509DC56CFF3285 /* Pods-HomeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeTask.debug.xcconfig"; sourceTree = "<group>"; };
+		15211DA9FE084115F18D577EC76A86F6 /* TimeZonePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TimeZonePicker-prefix.pch"; sourceTree = "<group>"; };
+		19A1B1E168B5A1CBB92C19626FFF1400 /* Pods-HomeTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HomeTask.modulemap"; sourceTree = "<group>"; };
+		2EE5DE4D678561B792545D534DD5587B /* TimeZonePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TimeZonePicker.debug.xcconfig; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3699A8626A9AE16343FC25B619271911 /* Pods-HomeTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeTask-dummy.m"; sourceTree = "<group>"; };
+		3D4377F84E2751E14DB3B6F9667225C2 /* TimeZonePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TimeZonePicker.release.xcconfig; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		470157A5489A8EE3BFA45D2EB805857F /* TimeZonePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TimeZonePicker-umbrella.h"; sourceTree = "<group>"; };
+		47CEBF0F39BC9237DB6C0A7575941432 /* Pods-HomeTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeTask-umbrella.h"; sourceTree = "<group>"; };
+		5B1932420A01AB15788240186102EBB5 /* TimeZonePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TimeZonePicker.framework; path = TimeZonePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		692C84F65E7462B0C813A06294A05967 /* TimeZonePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TimeZonePicker.modulemap; sourceTree = "<group>"; };
+		7836EC78F8C17B739895E84B6153BA10 /* TimeZonePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = TimeZonePicker.storyboard; path = Resources/TimeZonePicker.storyboard; sourceTree = "<group>"; };
+		84D7F6BDF0903DB266EBA173126B098D /* CitiesAndTimeZones.json */ = {isa = PBXFileReference; includeInIndex = 1; name = CitiesAndTimeZones.json; path = Resources/CitiesAndTimeZones.json; sourceTree = "<group>"; };
+		86560B64FDD65498C9FC4C9CBADF4196 /* CityCountryTimeZone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CityCountryTimeZone.swift; path = Classes/CityCountryTimeZone.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA856DAD76ADC88620BB9D072CADB0A3 /* Pods-HomeTask-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeTask-frameworks.sh"; sourceTree = "<group>"; };
+		C12EDB0AC11C7804740359D628C1F489 /* TimeZonePickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZonePickerDelegate.swift; path = Classes/TimeZonePickerDelegate.swift; sourceTree = "<group>"; };
+		D93162C9BF25C84594D4B87D49D226AA /* Pods_HomeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeTask.framework; path = "Pods-HomeTask.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB51FB0AD73FE6BFFA99348D7F7F4F16 /* Pods-HomeTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeTask-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFC0704C5466BE32E3A4CFCAA5D97BA1 /* TimeZonePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TimeZonePicker-Info.plist"; sourceTree = "<group>"; };
+		FF18BC6184624D42EEA10746BC14FE57 /* Pods-HomeTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeTask-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		668EF9047F56D181E4E8FCEA68A1B55C /* Frameworks */ = {
+		2966D9A1FEF167154BFAF40A93D951FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50913910038BBFEA4763C12FCC4B2F42 /* Foundation.framework in Frameworks */,
+				6EB1F1D49406DD340616C7176D2A2994 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9DD8901206D8D5CDC956C065F32641 /* Frameworks */ = {
+		6A3235D423CA08A52A61ACA68ED65AC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07DEAB65B059A853958463375A4A0F58 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D8E0095E42E0D0581D06D1EE4D56B51 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E8B4DEB53D6EFCF096253772DDAE17D /* Foundation.framework in Frameworks */,
-				EC0F9E2F515F1118BE8820F8181EF9B9 /* UIKit.framework in Frameworks */,
+				DC34C818D8A66D8DAA40D371BCC1E8C9 /* Foundation.framework in Frameworks */,
+				DD386AD1F5CBADAAC7969E8A792DF36E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
+		06DE744585E7CB1B9CCF3AE6D8C51E3F /* TimeZonePicker */ = {
 			isa = PBXGroup;
 			children = (
-				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
-				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		3D75AF23E89F5C05D1C5BD2DA5F70207 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2C7CF4478FA383BA4975E509B44EDA69 /* Images.xcassets */,
-				548A18865ADD2B3F2B42E714640D426A /* LoadingView.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5B2FD63F01ED682F789F7328B20CA951 /* Pods-HomeTask */ = {
-			isa = PBXGroup;
-			children = (
-				E49813BF08CDB9F68AB3F062422F819C /* Info.plist */,
-				5CDDD17C870585FFC85FF2AF36022209 /* Pods-HomeTask.modulemap */,
-				88F9F28ED5B3DB9054ABCC822F6EB555 /* Pods-HomeTask-acknowledgements.markdown */,
-				8F2DA3CB334BFDF1C79B33821B57D1B7 /* Pods-HomeTask-acknowledgements.plist */,
-				407867B11FA76D001533FC849941D115 /* Pods-HomeTask-dummy.m */,
-				A8BE390D9D1030E1ED2CA848912752C2 /* Pods-HomeTask-frameworks.sh */,
-				28A4A04839BFD1F9CAE3E91A1EBA3ACA /* Pods-HomeTask-resources.sh */,
-				13E495D85AB921705DA031AC4C962336 /* Pods-HomeTask-umbrella.h */,
-				E033545B0A5331BE5C62FF7795BE1AE6 /* Pods-HomeTask.debug.xcconfig */,
-				AA0E5FFC8F117CECA1E416B9469D21AB /* Pods-HomeTask.release.xcconfig */,
-			);
-			name = "Pods-HomeTask";
-			path = "Target Support Files/Pods-HomeTask";
-			sourceTree = "<group>";
-		};
-		651E5F775AC78865617B12A616443687 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A980676486588F3CB5369970213504EC /* Info.plist */,
-				D2B536DA64D6659B95F0478C9C881DAE /* Spring.modulemap */,
-				51AB4A1F3A79DC86897E41CA449345B7 /* Spring.xcconfig */,
-				07710119A250299BFC3DEE0EC8AE6159 /* Spring-dummy.m */,
-				8C999FB07C41F2A74F8A98D184CB9F73 /* Spring-prefix.pch */,
-				414A39A96EA79192890168290850BE0D /* Spring-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Spring";
-			sourceTree = "<group>";
-		};
-		7A5D4D620702E6C6DCBAC8367F1F9BFF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				238673FB1D704F2536CA119ABF3FD8E1 /* Info.plist */,
-				74707F4C4A13A8D85DFFBC4BEE4DD3F2 /* TimeZonePicker.modulemap */,
-				F2F3375EAC0D053FB7523250A118433A /* TimeZonePicker.xcconfig */,
-				CB3DCA481290D625489C7D4A77A5F47C /* TimeZonePicker-dummy.m */,
-				ECF5B8BAAE389123B7270A609C5BC67B /* TimeZonePicker-prefix.pch */,
-				D8FD422522B47E6E30215071E6CFFAA6 /* TimeZonePicker-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TimeZonePicker";
-			sourceTree = "<group>";
-		};
-		7C308DE33F746C44D13F4702B7F8EA0C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B2FD63F01ED682F789F7328B20CA951 /* Pods-HomeTask */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				D081B7127201318316904D286ACA186B /* Pods */,
-				CBC93723E159131A5ED8D7A1EAF84407 /* Products */,
-				7C308DE33F746C44D13F4702B7F8EA0C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		B0AB51EA62C93C0FA44A5AD3DF40E3BF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F97564C36148558FA922BBC1E40691A4 /* CitiesAndTimeZones.json */,
-				4479B16DE896705F27C39D3CEE121C9D /* TimeZonePicker.storyboard */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		B5A376341502F972518C3070670064C1 /* Spring */ = {
-			isa = PBXGroup;
-			children = (
-				0F4BC0785CD61C57FFC0C6E04D7223B1 /* AsyncButton.swift */,
-				EE6CBC1D69F8DBD2811F0D176028697E /* AsyncImageView.swift */,
-				9B18580968702C92397098C189181A83 /* AutoTextView.swift */,
-				64B2FED14F99EFB11FA70DC995A01E8E /* BlurView.swift */,
-				C7C15475B258CFE0170BE7E7B9D36341 /* DesignableButton.swift */,
-				24B6593DE68365EC0405BA7AA6757EFE /* DesignableImageView.swift */,
-				CB9BCFE5A120B8FF80007D75E3D45C17 /* DesignableLabel.swift */,
-				CB80C187A424BB7B35FCD0F31101F963 /* DesignableTabBarController.swift */,
-				C5C55AF0F246F574FC1F90D7D5D4F545 /* DesignableTextField.swift */,
-				3CA4C2DF173853D9A362400F6E06464E /* DesignableTextView.swift */,
-				A30FFAEC794E765F784762355B847A54 /* DesignableView.swift */,
-				D605044AE6689FD851770E17D11FFFAA /* ImageLoader.swift */,
-				DA090E245851F9E1A8AE32E1B203E826 /* KeyboardLayoutConstraint.swift */,
-				2C2A4020833E5A37F36C23F5AE04D637 /* LoadingView.swift */,
-				F110B1BCF09D352DD80D1CED0D6A86DA /* Misc.swift */,
-				3472C946CD4061761C698D1210023B73 /* SoundPlayer.swift */,
-				E0FA8E8486F218FE75CD9740710D9CF1 /* Spring.swift */,
-				CE6EB9C299759F9EB50EB9D7119E6B0F /* SpringAnimation.swift */,
-				AC9EC57D7F9F6414593A95F0322477E4 /* SpringButton.swift */,
-				A43851457FC969664B5410EE01E2E5A1 /* SpringImageView.swift */,
-				B079EFD017FB44D6D7BDC239DA38227B /* SpringLabel.swift */,
-				F4D3A59B28882BED05E6EF942F2B81CD /* SpringTextField.swift */,
-				6DDDF5D7E68B41B7D0CE2A5D98BFFCB7 /* SpringTextView.swift */,
-				AC5F6C099532AEAA3E0C35638B3343D7 /* SpringView.swift */,
-				85D9C8D1F6BF722CC6E3808F6FF30E0F /* TransitionManager.swift */,
-				D27F28CE7001CF1DAC746B6A350E3071 /* TransitionZoom.swift */,
-				CA38CE6051B86FC03C6F9139B436B764 /* UnwindSegue.swift */,
-				3D75AF23E89F5C05D1C5BD2DA5F70207 /* Resources */,
-				651E5F775AC78865617B12A616443687 /* Support Files */,
-			);
-			name = Spring;
-			path = Spring;
-			sourceTree = "<group>";
-		};
-		C066B4107D6A75EFE31B5B9C82EAF414 /* TimeZonePicker */ = {
-			isa = PBXGroup;
-			children = (
-				4A4A718592DECE06E084B32B1A2D84FC /* CityCountryTimeZone.swift */,
-				1DD58BB10A58BB5A492753596B2BA9CC /* TimeZonePickerDataSource.swift */,
-				ADA8CA367B8077E63DE3D3F4A8FD6417 /* TimeZonePickerDelegate.swift */,
-				5AF7F6A8392C676CDC75E299229D61F8 /* TimeZonePickerViewController.swift */,
-				B0AB51EA62C93C0FA44A5AD3DF40E3BF /* Resources */,
-				7A5D4D620702E6C6DCBAC8367F1F9BFF /* Support Files */,
+				86560B64FDD65498C9FC4C9CBADF4196 /* CityCountryTimeZone.swift */,
+				001B5C93B6779B8BE80807C7AFE8A127 /* TimeZonePickerDataSource.swift */,
+				C12EDB0AC11C7804740359D628C1F489 /* TimeZonePickerDelegate.swift */,
+				0A5239EF25B7173D84693E26FFA77C15 /* TimeZonePickerViewController.swift */,
+				0DDA35DDD22448B065D370006704831A /* Resources */,
+				EE4152B596BE6F285AE3DB4E190C606B /* Support Files */,
 			);
 			name = TimeZonePicker;
 			path = TimeZonePicker;
 			sourceTree = "<group>";
 		};
-		CBC93723E159131A5ED8D7A1EAF84407 /* Products */ = {
+		0DDA35DDD22448B065D370006704831A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BB37D3D2F78B4903B8CB979C4322D373 /* Pods_HomeTask.framework */,
-				430D8990C53B93167535B579EA27B109 /* Spring.framework */,
-				DB8392ADD271EB636FC4035BF27E05B2 /* TimeZonePicker.framework */,
+				84D7F6BDF0903DB266EBA173126B098D /* CitiesAndTimeZones.json */,
+				7836EC78F8C17B739895E84B6153BA10 /* TimeZonePicker.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1606DD4A9C97045F6D696916210943DB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B91945DF957F068CDEDD4DC7AAB0ECAC /* Pods-HomeTask */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C8862C38B3F81082C8F24DEB5F5DC1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D93162C9BF25C84594D4B87D49D226AA /* Pods_HomeTask.framework */,
+				5B1932420A01AB15788240186102EBB5 /* TimeZonePicker.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D081B7127201318316904D286ACA186B /* Pods */ = {
+		B91945DF957F068CDEDD4DC7AAB0ECAC /* Pods-HomeTask */ = {
 			isa = PBXGroup;
 			children = (
-				B5A376341502F972518C3070670064C1 /* Spring */,
-				C066B4107D6A75EFE31B5B9C82EAF414 /* TimeZonePicker */,
+				19A1B1E168B5A1CBB92C19626FFF1400 /* Pods-HomeTask.modulemap */,
+				DB51FB0AD73FE6BFFA99348D7F7F4F16 /* Pods-HomeTask-acknowledgements.markdown */,
+				FF18BC6184624D42EEA10746BC14FE57 /* Pods-HomeTask-acknowledgements.plist */,
+				3699A8626A9AE16343FC25B619271911 /* Pods-HomeTask-dummy.m */,
+				BA856DAD76ADC88620BB9D072CADB0A3 /* Pods-HomeTask-frameworks.sh */,
+				0879D51F9B1915A67DFD2FF83E9792C9 /* Pods-HomeTask-Info.plist */,
+				47CEBF0F39BC9237DB6C0A7575941432 /* Pods-HomeTask-umbrella.h */,
+				0E963BEBCF860E2D8F509DC56CFF3285 /* Pods-HomeTask.debug.xcconfig */,
+				06A51E6ACDE239366E204F906F676B50 /* Pods-HomeTask.release.xcconfig */,
+			);
+			name = "Pods-HomeTask";
+			path = "Target Support Files/Pods-HomeTask";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				CFF2C0718AB6E4A9D6AB837E012EBE0B /* Pods */,
+				3C8862C38B3F81082C8F24DEB5F5DC1D /* Products */,
+				1606DD4A9C97045F6D696916210943DB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFF2C0718AB6E4A9D6AB837E012EBE0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06DE744585E7CB1B9CCF3AE6D8C51E3F /* TimeZonePicker */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE4152B596BE6F285AE3DB4E190C606B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				692C84F65E7462B0C813A06294A05967 /* TimeZonePicker.modulemap */,
+				0BE19DC04A45F0CEFE0204EC66E68BD0 /* TimeZonePicker-dummy.m */,
+				DFC0704C5466BE32E3A4CFCAA5D97BA1 /* TimeZonePicker-Info.plist */,
+				15211DA9FE084115F18D577EC76A86F6 /* TimeZonePicker-prefix.pch */,
+				470157A5489A8EE3BFA45D2EB805857F /* TimeZonePicker-umbrella.h */,
+				2EE5DE4D678561B792545D534DD5587B /* TimeZonePicker.debug.xcconfig */,
+				3D4377F84E2751E14DB3B6F9667225C2 /* TimeZonePicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TimeZonePicker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1314C7DA5A72B16E317CF72D68246229 /* Headers */ = {
+		236EA5EEC0319AEE91A3454C01DDFB68 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5059DB5932976976612FB12A4DA278BB /* TimeZonePicker-umbrella.h in Headers */,
+				BE9CE67585FF0086FDBC959F4A1A39B2 /* TimeZonePicker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F45A7A6070FB33BF79751409DB0E418 /* Headers */ = {
+		581CE04C6FCE3951F99EAC97341F2B23 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5459C84CDB2D0645C2B806308B4C24D5 /* Pods-HomeTask-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC365F171A807002AB7A76C4E63B2B34 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				433C0340B903B7658A0D3529CC89D523 /* Spring-umbrella.h in Headers */,
+				A5D23C0A7807504762C158F1835799CD /* Pods-HomeTask-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		76C902E508E96CA770269A74F3C3C50E /* Pods-HomeTask */ = {
+		8FEDE7C52BE070E689636135B142929C /* Pods-HomeTask */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B8ACBA17218A268BF1674B6A1E2A8B9 /* Build configuration list for PBXNativeTarget "Pods-HomeTask" */;
+			buildConfigurationList = 0DF08BB02947287AE332417339F79AA0 /* Build configuration list for PBXNativeTarget "Pods-HomeTask" */;
 			buildPhases = (
-				AC523A2AC138F59869E861399F01D68E /* Sources */,
-				668EF9047F56D181E4E8FCEA68A1B55C /* Frameworks */,
-				8F45A7A6070FB33BF79751409DB0E418 /* Headers */,
+				581CE04C6FCE3951F99EAC97341F2B23 /* Headers */,
+				1C6A777959A4B41F7381843FE2E1E700 /* Sources */,
+				2966D9A1FEF167154BFAF40A93D951FD /* Frameworks */,
+				C565BE7ED8769BB772584B7215BDAFD3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F00FC49EB95CBB2B1DF894BDAD482088 /* PBXTargetDependency */,
-				7765C62986AA8BE5CCFD92414E0265AA /* PBXTargetDependency */,
+				852723D9BF64F72CB9A9E33E8331BF20 /* PBXTargetDependency */,
 			);
 			name = "Pods-HomeTask";
 			productName = "Pods-HomeTask";
-			productReference = BB37D3D2F78B4903B8CB979C4322D373 /* Pods_HomeTask.framework */;
+			productReference = D93162C9BF25C84594D4B87D49D226AA /* Pods_HomeTask.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C8E45149CE5B3BEC80016B8677732488 /* TimeZonePicker */ = {
+		DE7558C5F434D4CDA7B7DF1DD7E8F9F0 /* TimeZonePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F8BB98643662A7FE63AA9C1F7F9A91A /* Build configuration list for PBXNativeTarget "TimeZonePicker" */;
+			buildConfigurationList = B0904064A78751499569EDE70BFE63CF /* Build configuration list for PBXNativeTarget "TimeZonePicker" */;
 			buildPhases = (
-				053ABD0C59623941E55B90F86F4B26C4 /* Sources */,
-				8D8E0095E42E0D0581D06D1EE4D56B51 /* Frameworks */,
-				65AB97E9E0F939BA871BB1DD7DBE7EF6 /* Resources */,
-				1314C7DA5A72B16E317CF72D68246229 /* Headers */,
+				236EA5EEC0319AEE91A3454C01DDFB68 /* Headers */,
+				251DC4373D83554BE325DDAADBA0B7C1 /* Sources */,
+				6A3235D423CA08A52A61ACA68ED65AC7 /* Frameworks */,
+				2D5B7BAF6E512094E77AA08127CB6D0D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -400,188 +247,90 @@
 			);
 			name = TimeZonePicker;
 			productName = TimeZonePicker;
-			productReference = DB8392ADD271EB636FC4035BF27E05B2 /* TimeZonePicker.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F61D3DD6551E5C3680DE9F8DE9F52EAF /* Spring */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95FC127899E2AC6C34205341D120175A /* Build configuration list for PBXNativeTarget "Spring" */;
-			buildPhases = (
-				F12BD60C7AC1A31B4451F8FA25B52825 /* Sources */,
-				6F9DD8901206D8D5CDC956C065F32641 /* Frameworks */,
-				012DFE3C48CDC7C89179F4770988D8D6 /* Resources */,
-				FC365F171A807002AB7A76C4E63B2B34 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Spring;
-			productName = Spring;
-			productReference = 430D8990C53B93167535B579EA27B109 /* Spring.framework */;
+			productReference = 5B1932420A01AB15788240186102EBB5 /* TimeZonePicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CBC93723E159131A5ED8D7A1EAF84407 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3C8862C38B3F81082C8F24DEB5F5DC1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76C902E508E96CA770269A74F3C3C50E /* Pods-HomeTask */,
-				F61D3DD6551E5C3680DE9F8DE9F52EAF /* Spring */,
-				C8E45149CE5B3BEC80016B8677732488 /* TimeZonePicker */,
+				8FEDE7C52BE070E689636135B142929C /* Pods-HomeTask */,
+				DE7558C5F434D4CDA7B7DF1DD7E8F9F0 /* TimeZonePicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		012DFE3C48CDC7C89179F4770988D8D6 /* Resources */ = {
+		2D5B7BAF6E512094E77AA08127CB6D0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7762649AB6E4804DEFC95984AC72010 /* Images.xcassets in Resources */,
-				895F5F8222BE13922E49F39C5CB60951 /* LoadingView.xib in Resources */,
+				8EE10781CD4816C0610A364A093E9504 /* CitiesAndTimeZones.json in Resources */,
+				73EC77ADBCBF3DBFEDE60C46E5D76D5A /* TimeZonePicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65AB97E9E0F939BA871BB1DD7DBE7EF6 /* Resources */ = {
+		C565BE7ED8769BB772584B7215BDAFD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47C41B29F2FEAB4FE386072AD2043F0 /* CitiesAndTimeZones.json in Resources */,
-				AE6B2F95383B42DF2933B6CA7B3B71A3 /* TimeZonePicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		053ABD0C59623941E55B90F86F4B26C4 /* Sources */ = {
+		1C6A777959A4B41F7381843FE2E1E700 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				156F2B583BD7888B07FCCBC6ED1DDA15 /* CityCountryTimeZone.swift in Sources */,
-				6928D351551C90A0F2D7B80E4FBCFDE8 /* TimeZonePicker-dummy.m in Sources */,
-				0435BBDD10E4CBC3CF40F0058FFD3C4C /* TimeZonePickerDataSource.swift in Sources */,
-				04CFFACD8123183C2C6C553BAD446A70 /* TimeZonePickerDelegate.swift in Sources */,
-				BFB4F978798A6AE74BAD5B01972C5E8E /* TimeZonePickerViewController.swift in Sources */,
+				DC2C1335B7A3CDCF51366F705CBF96D9 /* Pods-HomeTask-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC523A2AC138F59869E861399F01D68E /* Sources */ = {
+		251DC4373D83554BE325DDAADBA0B7C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C677FAF1170CDE974B01BFB51DE3570F /* Pods-HomeTask-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F12BD60C7AC1A31B4451F8FA25B52825 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D8CDA8AB00E9ABFF758F9237B89174B /* AsyncButton.swift in Sources */,
-				B323616EB3ED64F6E282D6C25FFD8FB6 /* AsyncImageView.swift in Sources */,
-				2659016F557D352AF80AC4AB0D304D46 /* AutoTextView.swift in Sources */,
-				4C91F2FDA1B8E15F02AF9F7A1AA63C62 /* BlurView.swift in Sources */,
-				5439A5631AD05F97C2BC0326762B74CB /* DesignableButton.swift in Sources */,
-				0B9445D0151742B5C584FE29AE2D9E72 /* DesignableImageView.swift in Sources */,
-				86B8C233C0EBE7A05BB59E44BC70A9A2 /* DesignableLabel.swift in Sources */,
-				EDA988B892A91C2B6D783D06235930A8 /* DesignableTabBarController.swift in Sources */,
-				CE44E4AB50E91979AA152C2984E722B4 /* DesignableTextField.swift in Sources */,
-				EB2A59BA5D16E5BC40A9208394331876 /* DesignableTextView.swift in Sources */,
-				47EDC8A1BA01ADB3328A091F14B6EC35 /* DesignableView.swift in Sources */,
-				B3C640DD00716A30A8B7D5F7F22A2C31 /* ImageLoader.swift in Sources */,
-				7D48A5F40EDF79032EAAF04050B4EF60 /* KeyboardLayoutConstraint.swift in Sources */,
-				BFC158CF830F2AD23C380DE9ED92450F /* LoadingView.swift in Sources */,
-				0E00F51B6D0FF5F733FE39CBF6AD3FCB /* Misc.swift in Sources */,
-				02C1877B16E49882FF307D90170B27B1 /* SoundPlayer.swift in Sources */,
-				7176F8EE504DF356D4C504CBBACC04E0 /* Spring-dummy.m in Sources */,
-				D1E31699608360FDE7E503496DFD8E6E /* Spring.swift in Sources */,
-				CC19533A5935D52D67D8D1310EB64E07 /* SpringAnimation.swift in Sources */,
-				40A151B3F49473A465FC321C5C7212B4 /* SpringButton.swift in Sources */,
-				000761767BFE662D444C172EF387BDFD /* SpringImageView.swift in Sources */,
-				24C7C006B9332B4AFED2B32ED12CBAB6 /* SpringLabel.swift in Sources */,
-				D25D573C50CD77379FE31B7BCD233736 /* SpringTextField.swift in Sources */,
-				EB8195BA13CF6785926DAF20A5614989 /* SpringTextView.swift in Sources */,
-				75641F4F83A4F3AE7ACBBA7BB0870FF9 /* SpringView.swift in Sources */,
-				B905665F4D16652F1305912F09E8B64B /* TransitionManager.swift in Sources */,
-				DDB98C2F36125252991ECA4C955CB6E9 /* TransitionZoom.swift in Sources */,
-				2921101C93F248D6FBA541588BB5DBA9 /* UnwindSegue.swift in Sources */,
+				872DB3818CC377BD28AC81A21D17CCFA /* CityCountryTimeZone.swift in Sources */,
+				59E9DB7C9DC9293D44F0EF65A59BD092 /* TimeZonePicker-dummy.m in Sources */,
+				475691128B3B51EFDADB294899844DF3 /* TimeZonePickerDataSource.swift in Sources */,
+				B38A9B3101E438BE392289373767B554 /* TimeZonePickerDelegate.swift in Sources */,
+				3B8E5E375FAF798E1F36FEEF92BCA597 /* TimeZonePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7765C62986AA8BE5CCFD92414E0265AA /* PBXTargetDependency */ = {
+		852723D9BF64F72CB9A9E33E8331BF20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TimeZonePicker;
-			target = C8E45149CE5B3BEC80016B8677732488 /* TimeZonePicker */;
-			targetProxy = D2C7853DA590F47D07F28D63B46E9FF8 /* PBXContainerItemProxy */;
-		};
-		F00FC49EB95CBB2B1DF894BDAD482088 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Spring;
-			target = F61D3DD6551E5C3680DE9F8DE9F52EAF /* Spring */;
-			targetProxy = C027E5363EE0DF5A8DEAB2550F5E0B8F /* PBXContainerItemProxy */;
+			target = DE7558C5F434D4CDA7B7DF1DD7E8F9F0 /* TimeZonePicker */;
+			targetProxy = 039C4A23C28267C3FF3A3BF16ACE1CF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05022EC67280EF9800D7AEF2F27B1CDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2F3375EAC0D053FB7523250A118433A /* TimeZonePicker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TimeZonePicker/TimeZonePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TimeZonePicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TimeZonePicker/TimeZonePicker.modulemap";
-				PRODUCT_MODULE_NAME = TimeZonePicker;
-				PRODUCT_NAME = TimeZonePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -613,8 +362,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -633,52 +380,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		3B0A95EFAF1553CDAAA5C5FE204F44F9 /* Release */ = {
+		59D0DBCBC9085BB6F732CA6AD4871C0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51AB4A1F3A79DC86897E41CA449345B7 /* Spring.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
-				PRODUCT_MODULE_NAME = Spring;
-				PRODUCT_NAME = Spring;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		572C80766F0115DA43447A3E873E8143 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E033545B0A5331BE5C62FF7795BE1AE6 /* Pods-HomeTask.debug.xcconfig */;
+			baseConfigurationReference = 0E963BEBCF860E2D8F509DC56CFF3285 /* Pods-HomeTask.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -691,7 +405,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HomeTask/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -708,18 +422,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		745747B33EAD5A6EE02E683CFA38A087 /* Debug */ = {
+		8C8A376DAA6C8C2301518AC443D05753 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51AB4A1F3A79DC86897E41CA449345B7 /* Spring.xcconfig */;
+			baseConfigurationReference = 06A51E6ACDE239366E204F906F676B50 /* Pods-HomeTask.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -729,32 +443,33 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
-				PRODUCT_MODULE_NAME = Spring;
-				PRODUCT_NAME = Spring;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		8EE031D49392390DB891265A585CFD56 /* Debug */ = {
+		968ED3EA7B0788B4CB8832BE7E2B158E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2F3375EAC0D053FB7523250A118433A /* TimeZonePicker.xcconfig */;
+			baseConfigurationReference = 3D4377F84E2751E14DB3B6F9667225C2 /* TimeZonePicker.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -766,7 +481,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/TimeZonePicker/TimeZonePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TimeZonePicker/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/TimeZonePicker/TimeZonePicker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -780,15 +495,48 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1522EC4D8B4DF5E5828F3CDBF880F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE5DE4D678561B792545D534DD5587B /* TimeZonePicker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TimeZonePicker/TimeZonePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TimeZonePicker/TimeZonePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TimeZonePicker/TimeZonePicker.modulemap";
+				PRODUCT_MODULE_NAME = TimeZonePicker;
+				PRODUCT_NAME = TimeZonePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -820,8 +568,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -842,95 +588,49 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		BE4C03EE4C9E4E0657D8F1A97F6F5175 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA0E5FFC8F117CECA1E416B9469D21AB /* Pods-HomeTask.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HomeTask/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0DF08BB02947287AE332417339F79AA0 /* Build configuration list for PBXNativeTarget "Pods-HomeTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
-				08638A96A528B1EC32DE62F8A728389D /* Release */,
+				59D0DBCBC9085BB6F732CA6AD4871C0A /* Debug */,
+				8C8A376DAA6C8C2301518AC443D05753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95FC127899E2AC6C34205341D120175A /* Build configuration list for PBXNativeTarget "Spring" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				745747B33EAD5A6EE02E683CFA38A087 /* Debug */,
-				3B0A95EFAF1553CDAAA5C5FE204F44F9 /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B8ACBA17218A268BF1674B6A1E2A8B9 /* Build configuration list for PBXNativeTarget "Pods-HomeTask" */ = {
+		B0904064A78751499569EDE70BFE63CF /* Build configuration list for PBXNativeTarget "TimeZonePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				572C80766F0115DA43447A3E873E8143 /* Debug */,
-				BE4C03EE4C9E4E0657D8F1A97F6F5175 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F8BB98643662A7FE63AA9C1F7F9A91A /* Build configuration list for PBXNativeTarget "TimeZonePicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8EE031D49392390DB891265A585CFD56 /* Debug */,
-				05022EC67280EF9800D7AEF2F27B1CDE /* Release */,
+				C1522EC4D8B4DF5E5828F3CDBF880F23 /* Debug */,
+				968ED3EA7B0788B4CB8832BE7E2B158E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
