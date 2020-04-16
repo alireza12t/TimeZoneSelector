@@ -1,0 +1,6 @@
+framework module Pods_HomeTask {
+  umbrella header "Pods-HomeTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		633C6C86C2E9A75D150CE9F0 /* Pods_HomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A805926D0B5365DA608FC1F3 /* Pods_HomeTask.framework */; };
+		F535A99A24489A9200718AD6 /* InteractionPanToClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535A99924489A9200718AD6 /* InteractionPanToClose.swift */; };
 		F5CAA9F1244896A400108A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F0244896A400108A6E /* AppDelegate.swift */; };
 		F5CAA9F3244896A400108A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F2244896A400108A6E /* SceneDelegate.swift */; };
 		F5CAA9F5244896A400108A6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F4244896A400108A6E /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97C69F577474EBD90BB98575 /* Pods-HomeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeTask/Pods-HomeTask.debug.xcconfig"; sourceTree = "<group>"; };
+		A805926D0B5365DA608FC1F3 /* Pods_HomeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A0409561AAB70770FF4916 /* Pods-HomeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeTask/Pods-HomeTask.release.xcconfig"; sourceTree = "<group>"; };
+		F535A99924489A9200718AD6 /* InteractionPanToClose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionPanToClose.swift; sourceTree = "<group>"; };
 		F59CCD972448986F00EE6B12 /* HomeTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeTask.entitlements; sourceTree = "<group>"; };
 		F5CAA9ED244896A400108A6E /* HomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CAA9F0244896A400108A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633C6C86C2E9A75D150CE9F0 /* Pods_HomeTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CADB83B96F2728625AACCD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97C69F577474EBD90BB98575 /* Pods-HomeTask.debug.xcconfig */,
+				E5A0409561AAB70770FF4916 /* Pods-HomeTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9834116A32CC5CC4611A0C96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A805926D0B5365DA608FC1F3 /* Pods_HomeTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5CAA9E4244896A400108A6E = {
 			isa = PBXGroup;
 			children = (
 				F5CAA9EF244896A400108A6E /* HomeTask */,
 				F5CAA9EE244896A400108A6E /* Products */,
+				7CADB83B96F2728625AACCD6 /* Pods */,
+				9834116A32CC5CC4611A0C96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				F59CCD972448986F00EE6B12 /* HomeTask.entitlements */,
 				F5CAA9F0244896A400108A6E /* AppDelegate.swift */,
 				F5CAA9F2244896A400108A6E /* SceneDelegate.swift */,
+				F535A99924489A9200718AD6 /* InteractionPanToClose.swift */,
 				F5CAA9F4244896A400108A6E /* ViewController.swift */,
 				F5CAA9F6244896A400108A6E /* Main.storyboard */,
 				F5CAA9F9244896A600108A6E /* Assets.xcassets */,
@@ -76,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5CAAA01244896A600108A6E /* Build configuration list for PBXNativeTarget "HomeTask" */;
 			buildPhases = (
+				B0A99FFBDCBB196B74D4C674 /* [CP] Check Pods Manifest.lock */,
 				F5CAA9E9244896A400108A6E /* Sources */,
 				F5CAA9EA244896A400108A6E /* Frameworks */,
 				F5CAA9EB244896A400108A6E /* Resources */,
+				A41DD323F118CBBC85408EFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +164,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A41DD323F118CBBC85408EFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeTask/Pods-HomeTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/TimeZonePicker/TimeZonePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimeZonePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeTask/Pods-HomeTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A99FFBDCBB196B74D4C674 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5CAA9E9244896A400108A6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,6 +212,7 @@
 			files = (
 				F5CAA9F5244896A400108A6E /* ViewController.swift in Sources */,
 				F5CAA9F1244896A400108A6E /* AppDelegate.swift in Sources */,
+				F535A99A24489A9200718AD6 /* InteractionPanToClose.swift in Sources */,
 				F5CAA9F3244896A400108A6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +355,7 @@
 		};
 		F5CAAA02244896A600108A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C69F577474EBD90BB98575 /* Pods-HomeTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HomeTask/HomeTask.entitlements;
@@ -305,6 +377,7 @@
 		};
 		F5CAAA03244896A600108A6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A0409561AAB70770FF4916 /* Pods-HomeTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HomeTask/HomeTask.entitlements;

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,90 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="Rjs-wN-SC0" kind="presentation" identifier="ErrorSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="4Z7-ka-rWb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fhQ-sb-JFZ">
+            <objects>
+                <viewController id="Rjs-wN-SC0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x2t-HA-GRz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wh8-mQ-65s">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EbQ-rn-HZi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQ1-Cd-qpF">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4K-tB-6x0">
+                                        <rect key="frame" x="87.666666666666686" y="267" width="200" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F5-sL-OcN">
+                                                <rect key="frame" x="10" y="155" width="180" height="35"/>
+                                                <color key="backgroundColor" red="0.24313725489999999" green="0.43137254899999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="4xr-x4-LoT"/>
+                                                </constraints>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0F5-sL-OcN" secondAttribute="trailing" constant="10" id="4wx-hH-NdN"/>
+                                            <constraint firstAttribute="width" constant="200" id="6Ej-z5-dde"/>
+                                            <constraint firstItem="0F5-sL-OcN" firstAttribute="leading" secondItem="u4K-tB-6x0" secondAttribute="leading" constant="10" id="DXA-3B-0Ig"/>
+                                            <constraint firstAttribute="bottom" secondItem="0F5-sL-OcN" secondAttribute="bottom" constant="10" id="W77-Z9-PqW"/>
+                                            <constraint firstAttribute="height" constant="200" id="cU9-G4-m1j"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="u4K-tB-6x0" firstAttribute="centerX" secondItem="nQ1-Cd-qpF" secondAttribute="centerX" id="3Gh-Vy-AZP"/>
+                                    <constraint firstAttribute="trailing" secondItem="u4K-tB-6x0" secondAttribute="trailing" constant="40" id="DxL-L7-2qI"/>
+                                    <constraint firstAttribute="bottom" secondItem="u4K-tB-6x0" secondAttribute="bottom" constant="220" id="QlH-z0-cgH"/>
+                                    <constraint firstItem="u4K-tB-6x0" firstAttribute="centerY" secondItem="nQ1-Cd-qpF" secondAttribute="centerY" id="QuB-ds-daS"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="vRd-gC-xPW"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="rDp-3H-OdH"/>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Wh8-mQ-65s" secondAttribute="bottom" id="5hm-zm-jEy"/>
+                            <constraint firstItem="WxL-CV-fCj" firstAttribute="bottom" secondItem="nQ1-Cd-qpF" secondAttribute="bottom" id="9g3-Mi-oYo"/>
+                            <constraint firstItem="nQ1-Cd-qpF" firstAttribute="leading" secondItem="WxL-CV-fCj" secondAttribute="leading" id="9ww-yu-Fpu"/>
+                            <constraint firstItem="Wh8-mQ-65s" firstAttribute="top" secondItem="x2t-HA-GRz" secondAttribute="top" id="Boh-6e-Hfl"/>
+                            <constraint firstItem="Wh8-mQ-65s" firstAttribute="leading" secondItem="WxL-CV-fCj" secondAttribute="leading" id="Brl-EQ-sHv"/>
+                            <constraint firstItem="nQ1-Cd-qpF" firstAttribute="top" secondItem="WxL-CV-fCj" secondAttribute="top" id="edE-Ur-Vls"/>
+                            <constraint firstItem="WxL-CV-fCj" firstAttribute="trailing" secondItem="Wh8-mQ-65s" secondAttribute="trailing" id="h74-2o-JXQ"/>
+                            <constraint firstItem="WxL-CV-fCj" firstAttribute="trailing" secondItem="nQ1-Cd-qpF" secondAttribute="trailing" id="x2T-OB-002"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WxL-CV-fCj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7X-3T-H1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="859.82142857142856"/>
         </scene>
     </scenes>
 </document>
