@@ -26,9 +26,8 @@ class AddCityViewController: UIViewController {
         ValueKeeper.language = Language(rawValue: UserDefaultsHelper.get(key: .Language) ?? "ENGLISH") ?? .EN
         setupViews()
         makeTimeZoneList()
-        AddCityViewController.citiesList = AddCityViewController.citiesList.sorted { $0.cityName.lowercased() < $1.cityName.lowercased() }
-    
-        
+        timeZoneList = timeZoneList.sorted { $0.cityName.lowercased() < $1.cityName.lowercased() }
+
         let pickerView = UIPickerView()
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -188,6 +187,7 @@ extension AddCityViewController {
                 AddCityViewController.citiesList.append(response)
                 NotificationCenter.default.post(name: NSNotification.Name("UpdateTableView"), object: nil)
                 DialogueHelper.showStatusBarErrorMessage(errorMessageStr: StringHelper.cityAdded(), .orange)
+                AddCityViewController.citiesList = AddCityViewController.citiesList.sorted { $0.cityName.lowercased() < $1.cityName.lowercased() }
                 //                UserDefaultsHelper.set(key: .CitiesList, value: list)
             } else {
                 showErrorView()
