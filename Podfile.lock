@@ -1,16 +1,3 @@
-PODS:
-  - TimeZonePicker (1.2.0)
-
-DEPENDENCIES:
-  - TimeZonePicker
-
-SPEC REPOS:
-  trunk:
-    - TimeZonePicker
-
-SPEC CHECKSUMS:
-  TimeZonePicker: 8ed73f29ccbb2fca75855c0f3d7696c47abf5a90
-
-PODFILE CHECKSUM: e71c6f8189ef1edbb7090fe64d0e51749f2a7960
+PODFILE CHECKSUM: d41e2a7d4e5fff28b9bc9e1243cd86d3c69871cf
 
 COCOAPODS: 1.9.1

@@ -9,22 +9,60 @@
 import UIKit
 
 class TabBarViewController: UIViewController {
-
+    
+    @IBOutlet var addCityTabBarItem: UITabBarItem!
+    @IBOutlet var listTabBarItem: UITabBarItem!
+    @IBOutlet var tabBar: UITabBar!
+    @IBOutlet var listViewController: UIView!
+    @IBOutlet var addCityViewController: UIView!
+    
+    var selectedItem: UITabBarItem? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    
+    
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//MARK: - Setup Views
+extension TabBarViewController{
+    func setupViews(){
+        addCityTabBarItem.title = StringHelper.addCity()
+        addCityTabBarItem.image = UIImage(named: "City")
+        
+        listTabBarItem.title = StringHelper.citiesList()
+        listTabBarItem.image = UIImage(named: "List")
+        
+        tabBar.selectedItem = addCityTabBarItem
+        
+        selectedItem = addCityTabBarItem
     }
-    */
+}
 
+
+extension TabBarViewController: UITableViewDelegate {
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        switch item {
+        case listTabBarItem:
+            if selectedItem != listTabBarItem {
+                listViewController.isHidden = false
+                addCityViewController.isHidden = true
+            }
+        case addCityTabBarItem:
+            if selectedItem != addCityTabBarItem {
+                listViewController.isHidden = true
+                addCityViewController.isHidden = false
+            }
+        default:
+            break
+        }
+    }
+    
 }

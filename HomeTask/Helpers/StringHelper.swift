@@ -21,6 +21,15 @@ class StringHelper {
         }
     }
     
+    class func duplicateErrorMessage() -> String{
+        switch ValueKeeper.language {
+        case .FA:
+            return "شهر انتخاب شده در لیست وجود دارد"
+        case .EN:
+            return "Duplicate City Selected"
+        }
+    }
+    
     class func error() -> String{
         switch ValueKeeper.language {
         case .FA:
@@ -54,6 +63,15 @@ class StringHelper {
             return "لیست شهرها"
         case .EN:
             return "List of Cities"
+        }
+    }
+    
+    class func addCity() -> String{
+        switch ValueKeeper.language {
+        case .FA:
+            return "اضافه کردن شهر"
+        case .EN:
+            return "Add City"
         }
     }
     
