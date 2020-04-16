@@ -18,13 +18,15 @@ class CityListViewController: UIViewController {
     @IBOutlet var clearButton: UIButton!
     @IBOutlet var editButton: UIButton!
     
+    var timeZoneList: [CityTime] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         listTableView.delegate = self
         listTableView.dataSource = self
         setupViews()
-        
+        timeZoneList = TimeZoneHelper.makeTimeZoneList()
         listTableView.reloadData()
     }
     
@@ -74,6 +76,7 @@ extension CityListViewController {
     }
     
     @objc func updateTableView() {
+        timeZoneList = TimeZoneHelper.makeTimeZoneList()
         listTableView.reloadData()
         setupViews()
     }
@@ -104,7 +107,7 @@ extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomeCellTableViewCell", for: indexPath) as! CustomeCellTableViewCell
-        let cellData = AddCityViewController.citiesList[indexPath.row]
+        let cellData = timeZoneList[indexPath.row]
         
         
         cell.cityNameLabel.text = cellData.cityName

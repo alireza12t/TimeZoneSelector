@@ -17,16 +17,15 @@ class AddCityViewController: UIViewController {
     @IBOutlet var addButton: UIButton!
     
     var timeZoneList: [CityTime] = []
-    var response: CityTime? = nil
+    var response: Int? = nil
     var cityPickerView = UIPickerView()
-    static var citiesList: [CityTime] = []
+    static var citiesList: [Int] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ValueKeeper.language = Language(rawValue: UserDefaultsHelper.get(key: .Language) ?? "ENGLISH") ?? .EN
         setupViews()
-        makeTimeZoneList()
-        timeZoneList = timeZoneList.sorted { $0.cityName.lowercased() < $1.cityName.lowercased() }
+        timeZoneList = TimeZoneHelper.makeTimeZoneList()
 
         let pickerView = UIPickerView()
         pickerView.delegate = self
@@ -34,8 +33,8 @@ class AddCityViewController: UIViewController {
         pickerViewTextField.inputView = pickerView
         pickerViewTextField.delegate = self
         makePickerViewToolBar()
-        response = timeZoneList[0]
-        pickerViewTextField.text = response?.cityName
+        response = 0
+        pickerViewTextField.text = timeZoneList[response!].cityName
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,73 +47,7 @@ class AddCityViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name("Language"), object: nil)
     }
     
-    
-    func makeTimeZoneList(){
-        for tz in TimeZone.knownTimeZoneIdentifiers {
-            let timeZone = TimeZone(identifier: tz)
-            if var abbreviation = timeZone?.abbreviation() {
-                let item = CityTime()
-                let date = Date()
-                let calendar = Calendar.current
-                item.hour = calendar.component(.hour, from: date)
-                item.minute = calendar.component(.minute, from: date)
-                if tz.split(separator: "/").count == 2{
-                    item.cityName = String(tz.split(separator: "/")[1])
-                    abbreviation.removeFirst()
-                    abbreviation.removeFirst()
-                    abbreviation.removeFirst()
-                    if abbreviation.split(separator: ":").count > 0 {
-                        let sign = abbreviation.removeFirst()
-                        if sign == "+" {
-                            item.hour += Int(String(abbreviation.split(separator: ":")[0]))!
-                            if item.hour < 0 {
-                                item.hour += 24
-                            } else if item.hour > 24 {
-                                item.hour -= 24
-                            }
-                            
-                            if abbreviation.split(separator: ":").count == 2{
-                                
-                                item.minute += Int(String(abbreviation.split(separator: ":")[1]))!
-                                if item.minute >= 60 {
-                                    item.minute -= 60
-                                    item.hour += 1
-                                } else if item.minute <= 0 {
-                                    item.minute += 60
-                                    item.hour -= 1
-                                }
-                            }
-                            timeZoneList.append(item)
-                        } else if sign == "-"  {
-                            item.hour -= Int(String(abbreviation.split(separator: ":")[0]))!
-                            if item.hour < 0 {
-                                item.hour += 24
-                            } else if item.hour > 24 {
-                                item.hour -= 24
-                            }
-                            
-                            if abbreviation.split(separator: ":").count == 2{
-                                item.minute -= Int(String(abbreviation.split(separator: ":")[1]))!
-                                if item.minute >= 60 {
-                                    item.minute -= 60
-                                    item.hour += 1
-                                } else if item.minute <= 0 {
-                                    item.minute += 60
-                                    item.hour -= 1
-                                }
-                            }
-                            timeZoneList.append(item)
-                        } else {
-                            if Int(abbreviation) == 0 {
-                                timeZoneList.append(item)
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
+   
     
     
 }
@@ -179,19 +112,14 @@ extension AddCityViewController {
         if let response = response {
             //            var list: [CityTime] = UserDefaultsHelper.get(key: .CitiesList)
             
-            var condition = false
-            for item: CityTime in AddCityViewController.citiesList {
-                condition = condition || CityTime.areEqual(cityTime1: item, cityTime2: response)
-            }
-            if !condition {
+            if AddCityViewController.citiesList.contains(response) {
+                showErrorView()
+            } else {
                 AddCityViewController.citiesList.append(response)
                 NotificationCenter.default.post(name: NSNotification.Name("UpdateTableView"), object: nil)
                 DialogueHelper.showStatusBarErrorMessage(errorMessageStr: StringHelper.cityAdded(), .orange)
-                AddCityViewController.citiesList = AddCityViewController.citiesList.sorted { $0.cityName.lowercased() < $1.cityName.lowercased() }
-                //                UserDefaultsHelper.set(key: .CitiesList, value: list)
-            } else {
-                showErrorView()
             }
+            
         }
     }
     
@@ -209,8 +137,8 @@ extension AddCityViewController: UIPickerViewDelegate, UIPickerViewDataSource, U
         return timeZoneList.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        response = timeZoneList[row]
-        pickerViewTextField.text = response?.cityName
+        response = row
+        pickerViewTextField.text = timeZoneList[response!].cityName
     }
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 40.0

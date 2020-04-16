@@ -18,6 +18,7 @@
 		F535A9AB2448AEB000718AD6 /* CustomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535A9AA2448AEB000718AD6 /* CustomeCellTableViewCell.swift */; };
 		F535A9AD2448BA4D00718AD6 /* CityTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535A9AC2448BA4D00718AD6 /* CityTime.swift */; };
 		F573CBDE244909D600195C02 /* DialogueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573CBDD244909D600195C02 /* DialogueHelper.swift */; };
+		F573CBE024490F1500195C02 /* TimeZoneHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573CBDF24490F1500195C02 /* TimeZoneHelper.swift */; };
 		F5CAA9F1244896A400108A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F0244896A400108A6E /* AppDelegate.swift */; };
 		F5CAA9F3244896A400108A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F2244896A400108A6E /* SceneDelegate.swift */; };
 		F5CAA9F5244896A400108A6E /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F4244896A400108A6E /* ErrorViewController.swift */; };
@@ -40,6 +41,7 @@
 		F535A9AA2448AEB000718AD6 /* CustomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeCellTableViewCell.swift; sourceTree = "<group>"; };
 		F535A9AC2448BA4D00718AD6 /* CityTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTime.swift; sourceTree = "<group>"; };
 		F573CBDD244909D600195C02 /* DialogueHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogueHelper.swift; sourceTree = "<group>"; };
+		F573CBDF24490F1500195C02 /* TimeZoneHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneHelper.swift; sourceTree = "<group>"; };
 		F59CCD972448986F00EE6B12 /* HomeTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeTask.entitlements; sourceTree = "<group>"; };
 		F5CAA9ED244896A400108A6E /* HomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CAA9F0244896A400108A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				F535A99D2448A4DB00718AD6 /* UserDefaultsHelper.swift */,
 				F535A99B2448A44900718AD6 /* StringHelper.swift */,
 				F573CBDD244909D600195C02 /* DialogueHelper.swift */,
+				F573CBDF24490F1500195C02 /* TimeZoneHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				F535A9A02448A4EE00718AD6 /* ValueKeeper.swift in Sources */,
 				F535A99E2448A4DB00718AD6 /* UserDefaultsHelper.swift in Sources */,
+				F573CBE024490F1500195C02 /* TimeZoneHelper.swift in Sources */,
 				F535A9A72448AB2200718AD6 /* AddCityViewController.swift in Sources */,
 				F535A9A92448AB2D00718AD6 /* CityListViewController.swift in Sources */,
 				F5CAA9F5244896A400108A6E /* ErrorViewController.swift in Sources */,
