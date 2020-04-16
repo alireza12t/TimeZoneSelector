@@ -279,7 +279,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv6-kr-NpM">
-                                        <rect key="frame" x="312" y="42" width="48" height="30"/>
+                                        <rect key="frame" x="322" y="42" width="48" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" red="0.63257747890000005" green="0.0" blue="0.082163862879999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -298,10 +298,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="d45-mp-6hk" firstAttribute="centerY" secondItem="Gjn-fI-f1e" secondAttribute="centerY" id="7kK-sH-ClT"/>
-                                    <constraint firstItem="iv6-kr-NpM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EwV-Zt-7XY" secondAttribute="trailing" constant="5" id="8ol-if-Qii"/>
+                                    <constraint firstItem="iv6-kr-NpM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EwV-Zt-7XY" secondAttribute="trailing" constant="10" id="8ol-if-Qii"/>
                                     <constraint firstItem="d45-mp-6hk" firstAttribute="leading" secondItem="Gjn-fI-f1e" secondAttribute="leading" constant="15" id="Otd-AY-EXA"/>
                                     <constraint firstItem="EwV-Zt-7XY" firstAttribute="centerX" secondItem="Gjn-fI-f1e" secondAttribute="centerX" id="RyI-lf-z3s"/>
-                                    <constraint firstAttribute="trailing" secondItem="iv6-kr-NpM" secondAttribute="trailing" constant="15" id="TjL-1f-1I4"/>
+                                    <constraint firstAttribute="trailing" secondItem="iv6-kr-NpM" secondAttribute="trailing" constant="5" id="TjL-1f-1I4"/>
                                     <constraint firstItem="EwV-Zt-7XY" firstAttribute="centerY" secondItem="Gjn-fI-f1e" secondAttribute="centerY" id="aF1-MO-rsG"/>
                                     <constraint firstAttribute="height" constant="114" id="ege-0e-waB"/>
                                     <constraint firstItem="EwV-Zt-7XY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d45-mp-6hk" secondAttribute="trailing" constant="5" id="lBh-y5-XlN"/>

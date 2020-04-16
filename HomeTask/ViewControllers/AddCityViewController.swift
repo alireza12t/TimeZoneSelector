@@ -26,6 +26,9 @@ class AddCityViewController: UIViewController {
         ValueKeeper.language = Language(rawValue: UserDefaultsHelper.get(key: .Language) ?? "ENGLISH") ?? .EN
         setupViews()
         makeTimeZoneList()
+        AddCityViewController.citiesList = AddCityViewController.citiesList.sorted { $0.cityName.lowercased() < $1.cityName.lowercased() }
+    
+        
         let pickerView = UIPickerView()
         pickerView.delegate = self
         pickerView.dataSource = self
