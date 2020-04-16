@@ -25,18 +25,37 @@ class AddCityViewController: UIViewController {
         super.viewDidLoad()
         ValueKeeper.language = Language(rawValue: UserDefaultsHelper.get(key: .Language) ?? "ENGLISH") ?? .EN
         setupViews()
-        
-        
+        makeTimeZoneList()
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        pickerViewTextField.inputView = pickerView
+        pickerViewTextField.delegate = self
+        makePickerViewToolBar()
+        response = timeZoneList[0]
+        pickerViewTextField.text = response?.cityName
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeLanguage), name: NSNotification.Name("Language"), object: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("Language"), object: nil)
+    }
+    
+    
+    func makeTimeZoneList(){
         for tz in TimeZone.knownTimeZoneIdentifiers {
             let timeZone = TimeZone(identifier: tz)
             if var abbreviation = timeZone?.abbreviation() {
-//                , let seconds = timeZone?.secondsFromGMT() {
                 let item = CityTime()
                 let date = Date()
                 let calendar = Calendar.current
                 item.hour = calendar.component(.hour, from: date)
                 item.minute = calendar.component(.minute, from: date)
-//                print ("timeZone: \(tz) \nabbreviation: \(abbreviation)\nsecondsFromGMT: \(seconds)\n")
                 if tz.split(separator: "/").count == 2{
                     item.cityName = String(tz.split(separator: "/")[1])
                     abbreviation.removeFirst()
@@ -51,7 +70,7 @@ class AddCityViewController: UIViewController {
                             } else if item.hour > 24 {
                                 item.hour -= 24
                             }
-
+                            
                             if abbreviation.split(separator: ":").count == 2{
                                 
                                 item.minute += Int(String(abbreviation.split(separator: ":")[1]))!
@@ -92,27 +111,7 @@ class AddCityViewController: UIViewController {
                 }
             }
         }
-        print(timeZoneList.count)
-        
-        let pickerView = UIPickerView()
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        pickerViewTextField.inputView = pickerView
-        pickerViewTextField.delegate = self
-        makePickerViewToolBar()
-        response = timeZoneList[0]
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        NotificationCenter.default.addObserver(self, selector: #selector(changeLanguage), name: NSNotification.Name("Language"), object: nil)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("Language"), object: nil)
-    }
-    
     
     
     
@@ -163,20 +162,20 @@ extension AddCityViewController {
     }
     
     func makePickerViewToolBar() {
-       let toolBar = UIToolbar()
-       toolBar.sizeToFit()
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
         let button = UIBarButtonItem(title: StringHelper.done(), style: .plain, target: self, action: #selector(self.action))
-       toolBar.setItems([button], animated: true)
-       toolBar.isUserInteractionEnabled = true
-       pickerViewTextField.inputAccessoryView = toolBar
+        toolBar.setItems([button], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        pickerViewTextField.inputAccessoryView = toolBar
     }
     @objc func action() {
-          view.endEditing(true)
+        view.endEditing(true)
     }
     
     @IBAction func addButtonDidTap(_ sender: Any) {
         if let response = response {
-//            var list: [CityTime] = UserDefaultsHelper.get(key: .CitiesList)
+            //            var list: [CityTime] = UserDefaultsHelper.get(key: .CitiesList)
             
             var condition = false
             for item: CityTime in AddCityViewController.citiesList {
@@ -185,9 +184,9 @@ extension AddCityViewController {
             if !condition {
                 AddCityViewController.citiesList.append(response)
                 NotificationCenter.default.post(name: NSNotification.Name("UpdateTableView"), object: nil)
-//                UserDefaultsHelper.set(key: .CitiesList, value: list)
+                //                UserDefaultsHelper.set(key: .CitiesList, value: list)
             } else {
-             showErrorView()
+                showErrorView()
             }
         }
     }
@@ -214,11 +213,11 @@ extension AddCityViewController: UIPickerViewDelegate, UIPickerViewDataSource, U
     }
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let label = (view as? UILabel) ?? UILabel()
-
+        
         label.textColor = .black
         label.textAlignment = .center
         label.text = timeZoneList[row].cityName
-
+        
         return label
     }
 }

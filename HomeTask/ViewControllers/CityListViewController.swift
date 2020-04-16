@@ -19,16 +19,12 @@ class CityListViewController: UIViewController {
     @IBOutlet var editButton: UIButton!
     
     
-    var cityList: [CityTime] = []
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         listTableView.delegate = self
         listTableView.dataSource = self
         setupViews()
         
-        cityList = AddCityViewController.citiesList
         listTableView.reloadData()
     }
     
@@ -55,13 +51,13 @@ class CityListViewController: UIViewController {
 extension CityListViewController {
     func setupViews(){
         clearButton.setTitle(StringHelper.clear(), for: .normal)
-        editButton.setTitle(StringHelper.edit(), for: .normal)
-        if cityList.count == 0{
+//        editButton.setTitle(StringHelper.edit(), for: .normal)
+        if AddCityViewController.citiesList.count == 0{
             clearButton.isHidden = true
-            editButton.isHidden = true
+//            editButton.isHidden = true
         } else {
             clearButton.isHidden = false
-            editButton.isHidden = false
+//            editButton.isHidden = false
         }
         titleLabel.text = StringHelper.addCity()
         topBar.layer.shadowColor = UIColor.darkGray.cgColor
@@ -78,32 +74,37 @@ extension CityListViewController {
     }
     
     @objc func updateTableView() {
-        cityList = AddCityViewController.citiesList
         listTableView.reloadData()
         setupViews()
     }
     
     @IBAction func clearListButtonDidTap(_ sender: Any) {
-        cityList = []
-        AddCityViewController.citiesList = cityList
+        AddCityViewController.citiesList = []
         listTableView.reloadData()
         setupViews()
     }
     
     @IBAction func editButtonDidTap(_ sender: Any) {
-        
+//        listTableView.allowsMultipleSelection = true
+//        
+//        
+//        
+//        
+//        
+//        
+//        listTableView.allowsMultipleSelection = false
     }
 }
 
 //MARK: - Table View Delegate
 extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cityList.count
+        return AddCityViewController.citiesList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomeCellTableViewCell", for: indexPath) as! CustomeCellTableViewCell
-        let cellData = cityList[indexPath.row]
+        let cellData = AddCityViewController.citiesList[indexPath.row]
         
         
         cell.cityNameLabel.text = cellData.cityName
@@ -122,8 +123,9 @@ extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            cityList.remove(at: indexPath.row)
+            AddCityViewController.citiesList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            setupViews()
         }
     }
 }
