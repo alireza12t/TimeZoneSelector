@@ -17,6 +17,7 @@
 		F535A9A92448AB2D00718AD6 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535A9A82448AB2D00718AD6 /* CityListViewController.swift */; };
 		F535A9AB2448AEB000718AD6 /* CustomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535A9AA2448AEB000718AD6 /* CustomeCellTableViewCell.swift */; };
 		F535A9AD2448BA4D00718AD6 /* CityTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535A9AC2448BA4D00718AD6 /* CityTime.swift */; };
+		F573CBDE244909D600195C02 /* DialogueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573CBDD244909D600195C02 /* DialogueHelper.swift */; };
 		F5CAA9F1244896A400108A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F0244896A400108A6E /* AppDelegate.swift */; };
 		F5CAA9F3244896A400108A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F2244896A400108A6E /* SceneDelegate.swift */; };
 		F5CAA9F5244896A400108A6E /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CAA9F4244896A400108A6E /* ErrorViewController.swift */; };
@@ -38,6 +39,7 @@
 		F535A9A82448AB2D00718AD6 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
 		F535A9AA2448AEB000718AD6 /* CustomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeCellTableViewCell.swift; sourceTree = "<group>"; };
 		F535A9AC2448BA4D00718AD6 /* CityTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTime.swift; sourceTree = "<group>"; };
+		F573CBDD244909D600195C02 /* DialogueHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogueHelper.swift; sourceTree = "<group>"; };
 		F59CCD972448986F00EE6B12 /* HomeTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeTask.entitlements; sourceTree = "<group>"; };
 		F5CAA9ED244896A400108A6E /* HomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CAA9F0244896A400108A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				F535A99D2448A4DB00718AD6 /* UserDefaultsHelper.swift */,
 				F535A99B2448A44900718AD6 /* StringHelper.swift */,
+				F573CBDD244909D600195C02 /* DialogueHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				F5CAA9E9244896A400108A6E /* Sources */,
 				F5CAA9EA244896A400108A6E /* Frameworks */,
 				F5CAA9EB244896A400108A6E /* Resources */,
+				329F7CA53EEFC56F91717C7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +216,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		329F7CA53EEFC56F91717C7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeTask/Pods-HomeTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeTask/Pods-HomeTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B0A99FFBDCBB196B74D4C674 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +265,7 @@
 				F535A9A92448AB2D00718AD6 /* CityListViewController.swift in Sources */,
 				F5CAA9F5244896A400108A6E /* ErrorViewController.swift in Sources */,
 				F535A9AD2448BA4D00718AD6 /* CityTime.swift in Sources */,
+				F573CBDE244909D600195C02 /* DialogueHelper.swift in Sources */,
 				F5CAA9F1244896A400108A6E /* AppDelegate.swift in Sources */,
 				F535A99A24489A9200718AD6 /* InteractionPanToClose.swift in Sources */,
 				F535A99C2448A44900718AD6 /* StringHelper.swift in Sources */,

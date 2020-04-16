@@ -5,4 +5,6 @@ target 'HomeTask' do
   use_frameworks!
 
   # Pods for HomeTask
+  	pod 'BRYXBanner'
+
 end

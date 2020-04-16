@@ -20,6 +20,14 @@ class StringHelper {
             return "OK"
         }
     }
+    class func cityAdded() -> String{
+        switch ValueKeeper.language {
+        case .FA:
+            return "شهر موردنظر اضافه شد"
+        case .EN:
+            return "Selected City added"
+        }
+    }
     
     class func done() -> String{
         switch ValueKeeper.language {

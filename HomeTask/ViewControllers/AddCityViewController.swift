@@ -184,6 +184,7 @@ extension AddCityViewController {
             if !condition {
                 AddCityViewController.citiesList.append(response)
                 NotificationCenter.default.post(name: NSNotification.Name("UpdateTableView"), object: nil)
+                DialogueHelper.showStatusBarErrorMessage(errorMessageStr: StringHelper.cityAdded(), .orange)
                 //                UserDefaultsHelper.set(key: .CitiesList, value: list)
             } else {
                 showErrorView()

@@ -3,220 +3,282 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DB2DB17BEFF979A79274796B237702E /* Pods-HomeTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0A741B3097F8BFA9B88AC4345DA0E0 /* Pods-HomeTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		944C07E2E948D6499B076B27B897D8DC /* Pods-HomeTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96207F6FA96643AC00992192E589A35E /* Pods-HomeTask-dummy.m */; };
-		E5D967FFC68A330978E83253C208E137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		139FF6DA1D05B90F2631E069C8D13832 /* BRYXBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A11A675E0A6FC104F7EBDA3D855820 /* BRYXBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		696EB057D2DE8EC887C60EB149DBA05C /* Pods-HomeTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E495D85AB921705DA031AC4C962336 /* Pods-HomeTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CEE806C686E8F80DADE5C41C8D20F37 /* BRYXBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC0F496A53096E46714F847B502C5C /* BRYXBanner-dummy.m */; };
+		BA06F8C9FC2561BF75624B5C7D190FC7 /* Pods-HomeTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 407867B11FA76D001533FC849941D115 /* Pods-HomeTask-dummy.m */; };
+		CFBD4BDD68023529A9ACE2A85EC65ADE /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50819E2AAC6486BEA65CB47B2DB3E008 /* Banner.swift */; };
+		D07A6F9E24BBF582604087BA62A2590B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		DF9282F5D5E484A04A029E93FE4CA5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		526BE1EFABF9C5F98A57813B859039A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F3B36547C3C2CC3060475E614BCBF32;
+			remoteInfo = BRYXBanner;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0FFF09983DA731E64BB4F8130AB8B1D8 /* Pods-HomeTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HomeTask.modulemap"; sourceTree = "<group>"; };
-		2C0A741B3097F8BFA9B88AC4345DA0E0 /* Pods-HomeTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeTask-umbrella.h"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4333947917E91D257534D44C69502F26 /* Pods-HomeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeTask.debug.xcconfig"; sourceTree = "<group>"; };
-		4E6929E2216003D07F213D89B6C3A4EF /* Pods-HomeTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeTask-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7676DD0FC58A6A86A566EA97768D6D03 /* Pods-HomeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeTask.release.xcconfig"; sourceTree = "<group>"; };
-		96207F6FA96643AC00992192E589A35E /* Pods-HomeTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeTask-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C58D83709B0F7C3FC2E7434007040084 /* Pods-HomeTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeTask-acknowledgements.plist"; sourceTree = "<group>"; };
-		D93162C9BF25C84594D4B87D49D226AA /* Pods_HomeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeTask.framework; path = "Pods-HomeTask.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2EDBE735017DB003D414CB1B0804089 /* Pods-HomeTask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeTask-Info.plist"; sourceTree = "<group>"; };
+		13E495D85AB921705DA031AC4C962336 /* Pods-HomeTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeTask-umbrella.h"; sourceTree = "<group>"; };
+		28A4A04839BFD1F9CAE3E91A1EBA3ACA /* Pods-HomeTask-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeTask-resources.sh"; sourceTree = "<group>"; };
+		407867B11FA76D001533FC849941D115 /* Pods-HomeTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeTask-dummy.m"; sourceTree = "<group>"; };
+		4F5B02185447CA01F8B642E3ADBD48AF /* BRYXBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRYXBanner-prefix.pch"; sourceTree = "<group>"; };
+		50819E2AAC6486BEA65CB47B2DB3E008 /* Banner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Banner.swift; path = Pod/Classes/Banner.swift; sourceTree = "<group>"; };
+		55631EBD5826C71B58E43832BEAD131B /* BRYXBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BRYXBanner.modulemap; sourceTree = "<group>"; };
+		56C686D50E2950D8CA4059152C839DA9 /* BRYXBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BRYXBanner.framework; path = BRYXBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5CDDD17C870585FFC85FF2AF36022209 /* Pods-HomeTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HomeTask.modulemap"; sourceTree = "<group>"; };
+		88F9F28ED5B3DB9054ABCC822F6EB555 /* Pods-HomeTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeTask-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8F2DA3CB334BFDF1C79B33821B57D1B7 /* Pods-HomeTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeTask-acknowledgements.plist"; sourceTree = "<group>"; };
+		92A11A675E0A6FC104F7EBDA3D855820 /* BRYXBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BRYXBanner-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94E84B7C871F6FDAF923051CDB9367C5 /* Pods_HomeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeTask.framework; path = "Pods-HomeTask.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AAC0F496A53096E46714F847B502C5C /* BRYXBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BRYXBanner-dummy.m"; sourceTree = "<group>"; };
+		A8BE390D9D1030E1ED2CA848912752C2 /* Pods-HomeTask-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeTask-frameworks.sh"; sourceTree = "<group>"; };
+		AA0E5FFC8F117CECA1E416B9469D21AB /* Pods-HomeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeTask.release.xcconfig"; sourceTree = "<group>"; };
+		C72136647620CA4058269B0948586868 /* BRYXBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BRYXBanner.xcconfig; sourceTree = "<group>"; };
+		E033545B0A5331BE5C62FF7795BE1AE6 /* Pods-HomeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeTask.debug.xcconfig"; sourceTree = "<group>"; };
+		E49813BF08CDB9F68AB3F062422F819C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F868E12A3ECB9E80DFE8A96D39D08A87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEEE0E058094464773534E60D3488DED /* Frameworks */ = {
+		354DE64D1AA7D8C8FC211C6BCA9466AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D967FFC68A330978E83253C208E137 /* Foundation.framework in Frameworks */,
+				DF9282F5D5E484A04A029E93FE4CA5CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A20274A8D6D393379A05E270D7B8B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07A6F9E24BBF582604087BA62A2590B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		196A9E3AEBF0C8222510002E1DC8F6BA /* Products */ = {
+		2BCF77EC716A1AAB30AF849D9198B9F2 /* BRYXBanner */ = {
 			isa = PBXGroup;
 			children = (
-				D93162C9BF25C84594D4B87D49D226AA /* Pods_HomeTask.framework */,
+				50819E2AAC6486BEA65CB47B2DB3E008 /* Banner.swift */,
+				E7717482149055680681B400B4CB2613 /* Support Files */,
 			);
-			name = Products;
+			name = BRYXBanner;
+			path = BRYXBanner;
 			sourceTree = "<group>";
 		};
-		6C96B0F0A3BD9771EA27902FFA11335C /* Targets Support Files */ = {
+		5B2FD63F01ED682F789F7328B20CA951 /* Pods-HomeTask */ = {
 			isa = PBXGroup;
 			children = (
-				B8F7608E70B126F889C556D4F54F77DA /* Pods-HomeTask */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B8F7608E70B126F889C556D4F54F77DA /* Pods-HomeTask */ = {
-			isa = PBXGroup;
-			children = (
-				0FFF09983DA731E64BB4F8130AB8B1D8 /* Pods-HomeTask.modulemap */,
-				4E6929E2216003D07F213D89B6C3A4EF /* Pods-HomeTask-acknowledgements.markdown */,
-				C58D83709B0F7C3FC2E7434007040084 /* Pods-HomeTask-acknowledgements.plist */,
-				96207F6FA96643AC00992192E589A35E /* Pods-HomeTask-dummy.m */,
-				F2EDBE735017DB003D414CB1B0804089 /* Pods-HomeTask-Info.plist */,
-				2C0A741B3097F8BFA9B88AC4345DA0E0 /* Pods-HomeTask-umbrella.h */,
-				4333947917E91D257534D44C69502F26 /* Pods-HomeTask.debug.xcconfig */,
-				7676DD0FC58A6A86A566EA97768D6D03 /* Pods-HomeTask.release.xcconfig */,
+				E49813BF08CDB9F68AB3F062422F819C /* Info.plist */,
+				5CDDD17C870585FFC85FF2AF36022209 /* Pods-HomeTask.modulemap */,
+				88F9F28ED5B3DB9054ABCC822F6EB555 /* Pods-HomeTask-acknowledgements.markdown */,
+				8F2DA3CB334BFDF1C79B33821B57D1B7 /* Pods-HomeTask-acknowledgements.plist */,
+				407867B11FA76D001533FC849941D115 /* Pods-HomeTask-dummy.m */,
+				A8BE390D9D1030E1ED2CA848912752C2 /* Pods-HomeTask-frameworks.sh */,
+				28A4A04839BFD1F9CAE3E91A1EBA3ACA /* Pods-HomeTask-resources.sh */,
+				13E495D85AB921705DA031AC4C962336 /* Pods-HomeTask-umbrella.h */,
+				E033545B0A5331BE5C62FF7795BE1AE6 /* Pods-HomeTask.debug.xcconfig */,
+				AA0E5FFC8F117CECA1E416B9469D21AB /* Pods-HomeTask.release.xcconfig */,
 			);
 			name = "Pods-HomeTask";
 			path = "Target Support Files/Pods-HomeTask";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		69B2DB529403F3032F7F0FBC89EBFC71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				196A9E3AEBF0C8222510002E1DC8F6BA /* Products */,
-				6C96B0F0A3BD9771EA27902FFA11335C /* Targets Support Files */,
+				56C686D50E2950D8CA4059152C839DA9 /* BRYXBanner.framework */,
+				94E84B7C871F6FDAF923051CDB9367C5 /* Pods_HomeTask.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C308DE33F746C44D13F4702B7F8EA0C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B2FD63F01ED682F789F7328B20CA951 /* Pods-HomeTask */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C1AD255E68A2579AF31D0F3AC8AD536C /* Pods */,
+				69B2DB529403F3032F7F0FBC89EBFC71 /* Products */,
+				7C308DE33F746C44D13F4702B7F8EA0C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1AD255E68A2579AF31D0F3AC8AD536C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF77EC716A1AAB30AF849D9198B9F2 /* BRYXBanner */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E7717482149055680681B400B4CB2613 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55631EBD5826C71B58E43832BEAD131B /* BRYXBanner.modulemap */,
+				C72136647620CA4058269B0948586868 /* BRYXBanner.xcconfig */,
+				9AAC0F496A53096E46714F847B502C5C /* BRYXBanner-dummy.m */,
+				4F5B02185447CA01F8B642E3ADBD48AF /* BRYXBanner-prefix.pch */,
+				92A11A675E0A6FC104F7EBDA3D855820 /* BRYXBanner-umbrella.h */,
+				F868E12A3ECB9E80DFE8A96D39D08A87 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BRYXBanner";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		183BE42449911304C4325605704CEC2B /* Headers */ = {
+		E0FB9EFE5D23BF6878733455A0FD6237 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DB2DB17BEFF979A79274796B237702E /* Pods-HomeTask-umbrella.h in Headers */,
+				139FF6DA1D05B90F2631E069C8D13832 /* BRYXBanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5144E4D495FF8149BCA2B9E3667A1C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696EB057D2DE8EC887C60EB149DBA05C /* Pods-HomeTask-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8FEDE7C52BE070E689636135B142929C /* Pods-HomeTask */ = {
+		0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CBCEDE4BF2FC3FCB6C69CA5F634C577 /* Build configuration list for PBXNativeTarget "Pods-HomeTask" */;
+			buildConfigurationList = A6BD1E399966C1498C57653EC9B0AEB0 /* Build configuration list for PBXNativeTarget "BRYXBanner" */;
 			buildPhases = (
-				183BE42449911304C4325605704CEC2B /* Headers */,
-				9F45EF8C1A7918B46AC8486479A5E9EA /* Sources */,
-				CEEE0E058094464773534E60D3488DED /* Frameworks */,
-				0E91CE0A47D1DFBF0D38D53C5C2804F7 /* Resources */,
+				9D79E16B04D0743401F742E1F773820C /* Sources */,
+				354DE64D1AA7D8C8FC211C6BCA9466AB /* Frameworks */,
+				E0FB9EFE5D23BF6878733455A0FD6237 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = BRYXBanner;
+			productName = BRYXBanner;
+			productReference = 56C686D50E2950D8CA4059152C839DA9 /* BRYXBanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE6C25B58AB17BFA4B8B75722E22E33A /* Pods-HomeTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39283EFAB4FB70B57E38D71994CF7DD1 /* Build configuration list for PBXNativeTarget "Pods-HomeTask" */;
+			buildPhases = (
+				2FB21A40D0A3DE1EC2FF8C880ED72275 /* Sources */,
+				F2A20274A8D6D393379A05E270D7B8B2 /* Frameworks */,
+				F5144E4D495FF8149BCA2B9E3667A1C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D73A7BA11CBF73409D7B467524126BAC /* PBXTargetDependency */,
+			);
 			name = "Pods-HomeTask";
 			productName = "Pods-HomeTask";
-			productReference = D93162C9BF25C84594D4B87D49D226AA /* Pods_HomeTask.framework */;
+			productReference = 94E84B7C871F6FDAF923051CDB9367C5 /* Pods_HomeTask.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 10.0";
-			developmentRegion = en;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 196A9E3AEBF0C8222510002E1DC8F6BA /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 69B2DB529403F3032F7F0FBC89EBFC71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FEDE7C52BE070E689636135B142929C /* Pods-HomeTask */,
+				0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */,
+				AE6C25B58AB17BFA4B8B75722E22E33A /* Pods-HomeTask */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		0E91CE0A47D1DFBF0D38D53C5C2804F7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		9F45EF8C1A7918B46AC8486479A5E9EA /* Sources */ = {
+		2FB21A40D0A3DE1EC2FF8C880ED72275 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944C07E2E948D6499B076B27B897D8DC /* Pods-HomeTask-dummy.m in Sources */,
+				BA06F8C9FC2561BF75624B5C7D190FC7 /* Pods-HomeTask-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D79E16B04D0743401F742E1F773820C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBD4BDD68023529A9ACE2A85EC65ADE /* Banner.swift in Sources */,
+				9CEE806C686E8F80DADE5C41C8D20F37 /* BRYXBanner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin XCBuildConfiguration section */
-		1B824A899C662E12F4C0A7EB76F09D4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7676DD0FC58A6A86A566EA97768D6D03 /* Pods-HomeTask.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+/* Begin PBXTargetDependency section */
+		D73A7BA11CBF73409D7B467524126BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BRYXBanner;
+			target = 0F3B36547C3C2CC3060475E614BCBF32 /* BRYXBanner */;
+			targetProxy = 526BE1EFABF9C5F98A57813B859039A2 /* PBXContainerItemProxy */;
 		};
-		257497152829C177993B5EC99C1D227A /* Release */ = {
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,6 +310,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -266,22 +330,16 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		58149B07875D58269684766A466708BD /* Debug */ = {
+		902475926365C9F096411CAFC9F99224 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4333947917E91D257534D44C69502F26 /* Pods-HomeTask.debug.xcconfig */;
+			baseConfigurationReference = C72136647620CA4058269B0948586868 /* BRYXBanner.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -291,30 +349,67 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/BRYXBanner/BRYXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRYXBanner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/BRYXBanner/BRYXBanner.modulemap";
+				PRODUCT_MODULE_NAME = BRYXBanner;
+				PRODUCT_NAME = BRYXBanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+		9574E0C10A4DB9E3AAC9D4EC10FEE410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72136647620CA4058269B0948586868 /* BRYXBanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BRYXBanner/BRYXBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BRYXBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BRYXBanner/BRYXBanner.modulemap";
+				PRODUCT_MODULE_NAME = BRYXBanner;
+				PRODUCT_NAME = BRYXBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,6 +441,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -366,40 +463,126 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D9E2D35F11F98442BC211D8AED784993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0E5FFC8F117CECA1E416B9469D21AB /* Pods-HomeTask.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HomeTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E08D5FD377BF18E88B25DF19B09401CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E033545B0A5331BE5C62FF7795BE1AE6 /* Pods-HomeTask.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HomeTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HomeTask/Pods-HomeTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
-				257497152829C177993B5EC99C1D227A /* Release */,
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CBCEDE4BF2FC3FCB6C69CA5F634C577 /* Build configuration list for PBXNativeTarget "Pods-HomeTask" */ = {
+		39283EFAB4FB70B57E38D71994CF7DD1 /* Build configuration list for PBXNativeTarget "Pods-HomeTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58149B07875D58269684766A466708BD /* Debug */,
-				1B824A899C662E12F4C0A7EB76F09D4A /* Release */,
+				E08D5FD377BF18E88B25DF19B09401CF /* Debug */,
+				D9E2D35F11F98442BC211D8AED784993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BD1E399966C1498C57653EC9B0AEB0 /* Build configuration list for PBXNativeTarget "BRYXBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				902475926365C9F096411CAFC9F99224 /* Debug */,
+				9574E0C10A4DB9E3AAC9D4EC10FEE410 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

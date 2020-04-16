@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: d41e2a7d4e5fff28b9bc9e1243cd86d3c69871cf
+PODS:
+  - BRYXBanner (0.8.4)
 
-COCOAPODS: 1.9.1
+DEPENDENCIES:
+  - BRYXBanner
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BRYXBanner
+
+SPEC CHECKSUMS:
+  BRYXBanner: 4fbd266f96ce000e4c6cc9a0558c446bd88d9801
+
+PODFILE CHECKSUM: a602af0fd467be6ac04c0799d5d55e10f126d75b
+
+COCOAPODS: 1.5.2
