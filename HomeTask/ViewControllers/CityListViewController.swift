@@ -26,13 +26,28 @@ class CityListViewController: UIViewController {
         super.viewDidLoad()
         listTableView.delegate = self
         listTableView.dataSource = self
+        setupViews()
         
+        cityList = AddCityViewController.citiesList
+        listTableView.reloadData()
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupViews()
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTableView), name: NSNotification.Name("UpdateTableView"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeLanguage), name: NSNotification.Name("Language"), object: nil)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("UpdateTableView"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("Language"), object: nil)
+    }
+    
+    
+    
+    
     
 }
 
@@ -58,7 +73,26 @@ extension CityListViewController {
 
 //MARK: - Actions
 extension CityListViewController {
+    @objc func changeLanguage(){
+        setupViews()
+    }
     
+    @objc func updateTableView() {
+        cityList = AddCityViewController.citiesList
+        listTableView.reloadData()
+        setupViews()
+    }
+    
+    @IBAction func clearListButtonDidTap(_ sender: Any) {
+        cityList = []
+        AddCityViewController.citiesList = cityList
+        listTableView.reloadData()
+        setupViews()
+    }
+    
+    @IBAction func editButtonDidTap(_ sender: Any) {
+        
+    }
 }
 
 //MARK: - Table View Delegate
@@ -70,23 +104,18 @@ extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomeCellTableViewCell", for: indexPath) as! CustomeCellTableViewCell
         let cellData = cityList[indexPath.row]
-        if let hour = cellData.hour{
-            if let minute = cellData.minute {
-                if let name = cellData.cityName {
-                    
-                    cell.cityNameLabel.text = name
-                    
-                    if cellData.hour! >= 10 {
-                        if cellData.minute! >= 10 {
-                            cell.cityTimeLabel.text = "\(hour):\(minute)"
-                        } else {
-                            cell.cityTimeLabel.text = "\(hour):0\(minute)"
-                        }
-                    } else {
-                        cell.cityTimeLabel.text = "0\(hour):0\(minute)"
-                    }
-                }
+        
+        
+        cell.cityNameLabel.text = cellData.cityName
+        
+        if cellData.hour >= 10 {
+            if cellData.minute >= 10 {
+                cell.cityTimeLabel.text = "\(cellData.hour):\(cellData.minute)"
+            } else {
+                cell.cityTimeLabel.text = "\(cellData.hour):0\(cellData.minute)"
             }
+        } else {
+            cell.cityTimeLabel.text = "0\(cellData.hour):0\(cellData.minute)"
         }
         return cell
     }

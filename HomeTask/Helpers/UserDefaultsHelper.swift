@@ -9,7 +9,7 @@
 import Foundation
 
 enum userDefaultsKeys: String{
-    case Language
+    case Language, CitiesList
 }
 
 
@@ -28,17 +28,31 @@ class UserDefaultsHelper {
         UserDefaults.standard.set(value, forKey: key.rawValue)
     }
     
+    class func set(key: userDefaultsKeys, value: [CityTime]) {
+        let theData = NSKeyedArchiver.archivedData(withRootObject: value)
+        UserDefaults.standard.set(theData, forKey: key.rawValue)
+    }
+    
     class func get(key: userDefaultsKeys) -> Int {
         return UserDefaults.standard.integer(forKey: key.rawValue)
     }
     
-
     class func get(key: userDefaultsKeys) -> Bool {
         return UserDefaults.standard.bool(forKey: key.rawValue)
     }
 
     class func get(key: userDefaultsKeys) -> String? {
         return UserDefaults.standard.string(forKey: key.rawValue)
+    }
+    
+    class func get(key: userDefaultsKeys) -> [CityTime] {
+        let theData: Data? = UserDefaults.standard.data(forKey: key.rawValue)
+        if theData != nil {
+            return (NSKeyedUnarchiver.unarchiveObject(with: theData!) as? [CityTime]) ?? []
+        } else {
+            return []
+        }
+        
     }
 
     class func remove(key: userDefaultsKeys) {

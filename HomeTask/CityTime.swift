@@ -9,10 +9,10 @@
 import Foundation
 
 
-class CityTime {
-    var hour: Int? = nil
-    var minute: Int? = nil
-    var cityName: String? = nil
+class CityTime: Codable{
+    var hour: Int = 0
+    var minute: Int = 0
+    var cityName: String = ""
     
     class func areEqual(cityTime1: CityTime, cityTime2: CityTime) -> Bool{
         return cityTime1.cityName == cityTime2.cityName

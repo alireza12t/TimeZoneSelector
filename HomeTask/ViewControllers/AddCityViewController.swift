@@ -10,18 +10,108 @@ import UIKit
 
 class AddCityViewController: UIViewController {
     
+    
+    @IBOutlet var pickerViewTextField: UITextField!
     @IBOutlet var topBar: UIView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var addButton: UIButton!
-    @IBOutlet var changeLanguageButton: UIButton!
+    
+    var timeZoneList: [CityTime] = []
+    var response: CityTime? = nil
+    var cityPickerView = UIPickerView()
+    static var citiesList: [CityTime] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ValueKeeper.language = Language(rawValue: UserDefaultsHelper.get(key: .Language) ?? "ENGLISH") ?? .EN
         setupViews()
+        
+        
+        for tz in TimeZone.knownTimeZoneIdentifiers {
+            let timeZone = TimeZone(identifier: tz)
+            if var abbreviation = timeZone?.abbreviation() {
+//                , let seconds = timeZone?.secondsFromGMT() {
+                let item = CityTime()
+                let date = Date()
+                let calendar = Calendar.current
+                item.hour = calendar.component(.hour, from: date)
+                item.minute = calendar.component(.minute, from: date)
+//                print ("timeZone: \(tz) \nabbreviation: \(abbreviation)\nsecondsFromGMT: \(seconds)\n")
+                if tz.split(separator: "/").count == 2{
+                    item.cityName = String(tz.split(separator: "/")[1])
+                    abbreviation.removeFirst()
+                    abbreviation.removeFirst()
+                    abbreviation.removeFirst()
+                    if abbreviation.split(separator: ":").count > 0 {
+                        let sign = abbreviation.removeFirst()
+                        if sign == "+" {
+                            item.hour += Int(String(abbreviation.split(separator: ":")[0]))!
+                            if item.hour < 0 {
+                                item.hour += 24
+                            } else if item.hour > 24 {
+                                item.hour -= 24
+                            }
+
+                            if abbreviation.split(separator: ":").count == 2{
+                                
+                                item.minute += Int(String(abbreviation.split(separator: ":")[1]))!
+                                if item.minute >= 60 {
+                                    item.minute -= 60
+                                    item.hour += 1
+                                } else if item.minute <= 0 {
+                                    item.minute += 60
+                                    item.hour -= 1
+                                }
+                            }
+                            timeZoneList.append(item)
+                        } else if sign == "-"  {
+                            item.hour -= Int(String(abbreviation.split(separator: ":")[0]))!
+                            if item.hour < 0 {
+                                item.hour += 24
+                            } else if item.hour > 24 {
+                                item.hour -= 24
+                            }
+                            
+                            if abbreviation.split(separator: ":").count == 2{
+                                item.minute -= Int(String(abbreviation.split(separator: ":")[1]))!
+                                if item.minute >= 60 {
+                                    item.minute -= 60
+                                    item.hour += 1
+                                } else if item.minute <= 0 {
+                                    item.minute += 60
+                                    item.hour -= 1
+                                }
+                            }
+                            timeZoneList.append(item)
+                        } else {
+                            if Int(abbreviation) == 0 {
+                                timeZoneList.append(item)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        print(timeZoneList.count)
+        
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        pickerViewTextField.inputView = pickerView
+        pickerViewTextField.delegate = self
+        makePickerViewToolBar()
+        response = timeZoneList[0]
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeLanguage), name: NSNotification.Name("Language"), object: nil)
+    }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("Language"), object: nil)
+    }
     
     
     
@@ -34,28 +124,29 @@ extension AddCityViewController {
         titleLabel.text = StringHelper.addCity()
         
         addButton.setTitle(StringHelper.add(), for: .normal)
+        addButton.layer.cornerRadius = 14
         
         topBar.layer.shadowColor = UIColor.darkGray.cgColor
         topBar.layer.shadowOffset = .init(width: 0, height: 0)
         topBar.layer.shadowRadius = 3
         topBar.layer.shadowOpacity = 0.5
         
-        switch ValueKeeper.language {
-        case .FA:
-            changeLanguageButton.imageView?.image = UIImage(named: "UKFlag")
-        case .EN:
-            changeLanguageButton.imageView?.image = UIImage(named: "PersianFlag")
-        }
     }
 }
 
 
 //MARK: - Actions
 extension AddCityViewController {
+    @objc func changeLanguage(){
+        setupViews()
+    }
+    
     func showErrorView(){
         DispatchQueue.main.async {
             if #available(iOS 13.0, *) {
-                let vc = ErrorViewController()
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "ErrorViewController") as! ErrorViewController
+                
                 vc.errorMessage = StringHelper.duplicateErrorMessage()
                 self.present(vc, animated: true, completion: nil)
             } else {
@@ -67,28 +158,67 @@ extension AddCityViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ErrorSegue" {
             let vc = segue.destination as? ErrorViewController
-            if true {
-                vc?.errorMessage = StringHelper.duplicateErrorMessage()
+            vc?.errorMessage = StringHelper.duplicateErrorMessage()
+        }
+    }
+    
+    func makePickerViewToolBar() {
+       let toolBar = UIToolbar()
+       toolBar.sizeToFit()
+        let button = UIBarButtonItem(title: StringHelper.done(), style: .plain, target: self, action: #selector(self.action))
+       toolBar.setItems([button], animated: true)
+       toolBar.isUserInteractionEnabled = true
+       pickerViewTextField.inputAccessoryView = toolBar
+    }
+    @objc func action() {
+          view.endEditing(true)
+    }
+    
+    @IBAction func addButtonDidTap(_ sender: Any) {
+        if let response = response {
+//            var list: [CityTime] = UserDefaultsHelper.get(key: .CitiesList)
+            
+            var condition = false
+            for item: CityTime in AddCityViewController.citiesList {
+                condition = condition || CityTime.areEqual(cityTime1: item, cityTime2: response)
+            }
+            if !condition {
+                AddCityViewController.citiesList.append(response)
+                NotificationCenter.default.post(name: NSNotification.Name("UpdateTableView"), object: nil)
+//                UserDefaultsHelper.set(key: .CitiesList, value: list)
+            } else {
+             showErrorView()
             }
         }
     }
     
-    
-    
-    @IBAction func addButtonDidTap(_ sender: Any) {
-        
+}
+
+
+
+
+
+extension AddCityViewController: UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    
-    @IBAction func changeLanguageButtonDidTap(_ sender: UIButton) {
-        if sender.imageView?.image == UIImage(named: "PersianFlag") {
-            ValueKeeper.language = .FA
-            sender.imageView?.image = UIImage(named: "UKFlag")
-            viewDidAppear(false)
-        } else if sender.imageView?.image == UIImage(named: "UKFlag") {
-            ValueKeeper.language = .EN
-            sender.imageView?.image = UIImage(named: "PersianFlag")
-            viewDidAppear(false)
-        }
-        UserDefaultsHelper.set(key: .Language, value: ValueKeeper.language.rawValue)
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return timeZoneList.count
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        response = timeZoneList[row]
+        pickerViewTextField.text = response?.cityName
+    }
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 40.0
+    }
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let label = (view as? UILabel) ?? UILabel()
+
+        label.textColor = .black
+        label.textAlignment = .center
+        label.text = timeZoneList[row].cityName
+
+        return label
     }
 }

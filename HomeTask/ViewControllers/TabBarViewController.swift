@@ -15,6 +15,7 @@ class TabBarViewController: UIViewController {
     @IBOutlet var tabBar: UITabBar!
     @IBOutlet var listViewController: UIView!
     @IBOutlet var addCityViewController: UIView!
+    @IBOutlet var changeLanguageButton: UIButton!
     
     var selectedItem: UITabBarItem? = nil
     
@@ -26,6 +27,8 @@ class TabBarViewController: UIViewController {
     }
     
     
+    
+
     
     
     
@@ -44,10 +47,34 @@ extension TabBarViewController{
         tabBar.selectedItem = addCityTabBarItem
         
         selectedItem = addCityTabBarItem
+        
+        switch ValueKeeper.language {
+        case .FA:
+            changeLanguageButton.setImage(UIImage(named: "UKFlag"), for: .normal)
+        case .EN:
+            changeLanguageButton.setImage(UIImage(named: "PersianFlag"), for: .normal)
+        }
+    }
+}
+
+//MARK: - Actions
+extension TabBarViewController {
+    @IBAction func changeLanguageButtonDidTap(_ sender: UIButton) {
+        if ValueKeeper.language == .EN {
+            ValueKeeper.language = .FA
+            changeLanguageButton.setImage(UIImage(named: "PersianFlag"), for: .normal)
+        } else if ValueKeeper.language == .FA {
+            ValueKeeper.language = .EN
+            changeLanguageButton.setImage(UIImage(named: "UKFlag"), for: .normal)
+        }
+        UserDefaultsHelper.set(key: .Language, value: ValueKeeper.language.rawValue)
+        NotificationCenter.default.post(name: NSNotification.Name("Language"), object: nil)
+        viewDidLoad()
     }
 }
 
 
+//MARK: - Tab Bar Delegate
 extension TabBarViewController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         switch item {
@@ -56,12 +83,14 @@ extension TabBarViewController: UITabBarDelegate {
                 listViewController.isHidden = false
                 addCityViewController.isHidden = true
                 selectedItem = listTabBarItem
+                changeLanguageButton.isHidden = true
             }
         case addCityTabBarItem:
             if selectedItem != addCityTabBarItem {
                 listViewController.isHidden = true
                 addCityViewController.isHidden = false
                 selectedItem = addCityTabBarItem
+                changeLanguageButton.isHidden = false
             }
         default:
             break

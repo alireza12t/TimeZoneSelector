@@ -10,17 +10,18 @@ import UIKit
 
 class CustomeCellTableViewCell: UITableViewCell {
 
-    @IBOutlet var view: UIView!
+    @IBOutlet var cellView: UIView!
     @IBOutlet var cityTimeLabel: UILabel!
     @IBOutlet var cityNameLabel: UILabel!
     
     
     override func awakeFromNib() {
-        view.layer.cornerRadius = 25
-        view.layer.shadowColor = UIColor.darkGray.cgColor
-        view.layer.shadowOffset = .init(width: 0, height: 0)
-        view.layer.shadowRadius = 3
-        view.layer.shadowOpacity = 0.5
+        cellView.layer.masksToBounds = false
+        cellView.layer.cornerRadius = 25
+        cellView.layer.shadowColor = UIColor.darkGray.cgColor
+        cellView.layer.shadowOffset = .init(width: 0, height: 0)
+        cellView.layer.shadowRadius = 3
+        cellView.layer.shadowOpacity = 0.5
     }
     
 }

@@ -21,6 +21,15 @@ class StringHelper {
         }
     }
     
+    class func done() -> String{
+        switch ValueKeeper.language {
+        case .FA:
+            return "تایید"
+        case .EN:
+            return "Done"
+        }
+    }
+    
     class func add() -> String{
         switch ValueKeeper.language {
         case .FA:
