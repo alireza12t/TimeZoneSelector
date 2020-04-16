@@ -107,7 +107,7 @@ extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomeCellTableViewCell", for: indexPath) as! CustomeCellTableViewCell
-        let cellData = timeZoneList[indexPath.row]
+        let cellData = timeZoneList[AddCityViewController.citiesList[indexPath.row]]
         
         
         cell.cityNameLabel.text = cellData.cityName
@@ -119,7 +119,11 @@ extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.cityTimeLabel.text = "\(cellData.hour):0\(cellData.minute)"
             }
         } else {
-            cell.cityTimeLabel.text = "0\(cellData.hour):0\(cellData.minute)"
+            if cellData.minute >= 10 {
+                cell.cityTimeLabel.text = "0\(cellData.hour):\(cellData.minute)"
+            } else {
+                cell.cityTimeLabel.text = "0\(cellData.hour):0\(cellData.minute)"
+            }
         }
         return cell
     }
