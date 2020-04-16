@@ -12,6 +12,7 @@ import UIKit
 
 class CityListViewController: UIViewController {
     
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var topBar: UIView!
     @IBOutlet var listTableView: UITableView!
     @IBOutlet var clearButton: UIButton!
@@ -23,6 +24,8 @@ class CityListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        listTableView.delegate = self
+        listTableView.dataSource = self
         
     }
     
@@ -45,7 +48,7 @@ extension CityListViewController {
             clearButton.isHidden = false
             editButton.isHidden = false
         }
-        
+        titleLabel.text = StringHelper.addCity()
         topBar.layer.shadowColor = UIColor.darkGray.cgColor
         topBar.layer.shadowOffset = .init(width: 0, height: 0)
         topBar.layer.shadowRadius = 3

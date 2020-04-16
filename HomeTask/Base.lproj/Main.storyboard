@@ -82,26 +82,33 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbe-R2-A1j">
                                 <rect key="frame" x="20" y="384" width="335" height="35"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.43137254899999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="28z-Tv-WkJ"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="addButtonDidTap:" destination="pdK-qw-oz6" eventType="touchUpInside" id="HVz-x2-9Lq"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nK8-Ub-azW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="M6l-rJ-Bco">
-                                        <rect key="frame" x="159" y="21.666666666666671" width="57" height="27"/>
+                                        <rect key="frame" x="159" y="43.666666666666664" width="57" height="26.999999999999993"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toD-cz-pKe">
-                                        <rect key="frame" x="20" y="20" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toD-cz-pKe">
+                                        <rect key="frame" x="20" y="44.666666666666657" width="40" height="24.999999999999993"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="2Vq-7x-aNk"/>
+                                            <constraint firstAttribute="height" constant="25" id="fwC-CB-Ik5"/>
+                                        </constraints>
+                                        <state key="normal" image="PersianFlag"/>
                                         <connections>
                                             <action selector="changeLanguageButtonDidTap:" destination="pdK-qw-oz6" eventType="touchUpInside" id="Nr9-nd-Pha"/>
                                         </connections>
@@ -113,7 +120,7 @@
                                     <constraint firstItem="toD-cz-pKe" firstAttribute="leading" secondItem="nK8-Ub-azW" secondAttribute="leading" constant="20" id="6gF-JG-hEp"/>
                                     <constraint firstItem="M6l-rJ-Bco" firstAttribute="centerX" secondItem="nK8-Ub-azW" secondAttribute="centerX" id="Ap4-d3-oza"/>
                                     <constraint firstItem="toD-cz-pKe" firstAttribute="centerY" secondItem="M6l-rJ-Bco" secondAttribute="centerY" id="drQ-88-QW3"/>
-                                    <constraint firstAttribute="height" constant="70" id="gW2-ew-SQ1"/>
+                                    <constraint firstAttribute="height" constant="114" id="gW2-ew-SQ1"/>
                                     <constraint firstItem="M6l-rJ-Bco" firstAttribute="centerY" secondItem="nK8-Ub-azW" secondAttribute="centerY" id="i2c-ct-g3I"/>
                                 </constraints>
                             </view>
@@ -133,7 +140,8 @@
                         <viewLayoutGuide key="safeArea" id="P5a-Lo-RY8"/>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="lbe-R2-A1j" id="etj-9e-owe"/>
+                        <outlet property="addButton" destination="lbe-R2-A1j" id="X9K-ty-Yw6"/>
+                        <outlet property="changeLanguageButton" destination="toD-cz-pKe" id="OPa-j8-W2e"/>
                         <outlet property="titleLabel" destination="M6l-rJ-Bco" id="oDj-xK-ZYm"/>
                         <outlet property="topBar" destination="nK8-Ub-azW" id="Edm-PV-Q14"/>
                         <segue destination="Rjs-wN-SC0" kind="presentation" identifier="ErrorSegue" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="0Fi-CL-ZEM"/>
@@ -141,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rC-JF-ydD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="-174"/>
+            <point key="canvasLocation" x="1113" y="403"/>
         </scene>
         <!--Error View Controller-->
         <scene sceneID="fhQ-sb-JFZ">
@@ -247,7 +255,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="1865" y="-174"/>
+            <point key="canvasLocation" x="1882" y="403"/>
         </scene>
         <!--City List View Controller-->
         <scene sceneID="VS1-45-KeS">
@@ -258,24 +266,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gjn-fI-f1e">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d45-mp-6hk">
-                                        <rect key="frame" x="15" y="18.666666666666671" width="53" height="33"/>
+                                        <rect key="frame" x="15" y="40.666666666666664" width="53" height="32.999999999999993"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv6-kr-NpM">
-                                        <rect key="frame" x="312" y="20" width="48" height="30"/>
+                                        <rect key="frame" x="312" y="42" width="48" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" red="0.63257747890000005" green="0.0" blue="0.082163862879999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="EwV-Zt-7XY">
-                                        <rect key="frame" x="159" y="21.666666666666671" width="57" height="27"/>
+                                        <rect key="frame" x="159" y="43.666666666666664" width="57" height="26.999999999999993"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -289,13 +297,13 @@
                                     <constraint firstItem="EwV-Zt-7XY" firstAttribute="centerX" secondItem="Gjn-fI-f1e" secondAttribute="centerX" id="RyI-lf-z3s"/>
                                     <constraint firstAttribute="trailing" secondItem="iv6-kr-NpM" secondAttribute="trailing" constant="15" id="TjL-1f-1I4"/>
                                     <constraint firstItem="EwV-Zt-7XY" firstAttribute="centerY" secondItem="Gjn-fI-f1e" secondAttribute="centerY" id="aF1-MO-rsG"/>
-                                    <constraint firstAttribute="height" constant="70" id="ege-0e-waB"/>
+                                    <constraint firstAttribute="height" constant="114" id="ege-0e-waB"/>
                                     <constraint firstItem="EwV-Zt-7XY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d45-mp-6hk" secondAttribute="trailing" constant="5" id="lBh-y5-XlN"/>
                                     <constraint firstItem="iv6-kr-NpM" firstAttribute="centerY" secondItem="Gjn-fI-f1e" secondAttribute="centerY" id="omv-Sc-mGo"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y8a-KS-vwi">
-                                <rect key="frame" x="0.0" y="80" width="375" height="644"/>
+                                <rect key="frame" x="0.0" y="124" width="375" height="600"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Grf-l5-uv0">
                                     <rect key="frame" x="0.0" y="133" width="375" height="44"/>
@@ -371,15 +379,17 @@
                         <outlet property="clearButton" destination="iv6-kr-NpM" id="ON7-An-jiA"/>
                         <outlet property="editButton" destination="d45-mp-6hk" id="uoK-xV-wXi"/>
                         <outlet property="listTableView" destination="y8a-KS-vwi" id="Rz2-Ly-LAN"/>
+                        <outlet property="titleLabel" destination="EwV-Zt-7XY" id="xgN-OZ-Ake"/>
                         <outlet property="topBar" destination="Gjn-fI-f1e" id="oKo-Zg-F5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tL1-Ze-IMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.8" y="444.82758620689657"/>
+            <point key="canvasLocation" x="1113" y="-220"/>
         </scene>
     </scenes>
     <resources>
+        <image name="PersianFlag" width="473" height="270"/>
         <image name="icons8-add_new" width="25" height="25"/>
     </resources>
 </document>

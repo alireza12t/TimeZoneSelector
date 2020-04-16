@@ -21,6 +21,15 @@ class StringHelper {
         }
     }
     
+    class func add() -> String{
+        switch ValueKeeper.language {
+        case .FA:
+            return "افزودن"
+        case .EN:
+            return "Add"
+        }
+    }
+    
     class func duplicateErrorMessage() -> String{
         switch ValueKeeper.language {
         case .FA:

@@ -13,6 +13,7 @@ class AddCityViewController: UIViewController {
     @IBOutlet var topBar: UIView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var addButton: UIButton!
+    @IBOutlet var changeLanguageButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,20 @@ class AddCityViewController: UIViewController {
 extension AddCityViewController {
     func setupViews(){
         titleLabel.text = StringHelper.addCity()
+        
+        addButton.setTitle(StringHelper.add(), for: .normal)
+        
+        topBar.layer.shadowColor = UIColor.darkGray.cgColor
+        topBar.layer.shadowOffset = .init(width: 0, height: 0)
+        topBar.layer.shadowRadius = 3
+        topBar.layer.shadowOpacity = 0.5
+        
+        switch ValueKeeper.language {
+        case .FA:
+            changeLanguageButton.imageView?.image = UIImage(named: "UKFlag")
+        case .EN:
+            changeLanguageButton.imageView?.image = UIImage(named: "PersianFlag")
+        }
     }
 }
 
@@ -41,6 +56,7 @@ extension AddCityViewController {
         DispatchQueue.main.async {
             if #available(iOS 13.0, *) {
                 let vc = ErrorViewController()
+                vc.errorMessage = StringHelper.duplicateErrorMessage()
                 self.present(vc, animated: true, completion: nil)
             } else {
                 self.performSegue(withIdentifier: "ErrorSegue", sender: self)
@@ -56,6 +72,8 @@ extension AddCityViewController {
             }
         }
     }
+    
+    
     
     @IBAction func addButtonDidTap(_ sender: Any) {
         

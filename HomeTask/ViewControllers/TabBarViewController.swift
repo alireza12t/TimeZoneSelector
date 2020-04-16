@@ -21,7 +21,8 @@ class TabBarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        tabBar.delegate = self
+        setupViews()
     }
     
     
@@ -47,18 +48,20 @@ extension TabBarViewController{
 }
 
 
-extension TabBarViewController: UITableViewDelegate {
+extension TabBarViewController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         switch item {
         case listTabBarItem:
             if selectedItem != listTabBarItem {
                 listViewController.isHidden = false
                 addCityViewController.isHidden = true
+                selectedItem = listTabBarItem
             }
         case addCityTabBarItem:
             if selectedItem != addCityTabBarItem {
                 listViewController.isHidden = true
                 addCityViewController.isHidden = false
+                selectedItem = addCityTabBarItem
             }
         default:
             break
