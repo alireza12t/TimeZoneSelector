@@ -67,41 +67,47 @@ class TimeZoneHelper {
                         print("current time =>  \(item.hour):\(item.minute), GMT => \(abbreviation.split(separator: ":"))")
                         if sign == "+" {
                             item.hour += Int(String(abbreviation.split(separator: ":")[0]))!
-                            if item.hour < 0 {
-                                item.hour += 24
-                            } else if item.hour > 24 {
-                                item.hour -= 24
-                            }
+                       
                             
                             if abbreviation.split(separator: ":").count == 2{
                                 
                                 item.minute += Int(String(abbreviation.split(separator: ":")[1]))!
-                                if item.minute >= 60 {
-                                    item.minute -= 60
-                                    item.hour += 1
-                                } else if item.minute <= 0 {
-                                    item.minute += 60
-                                    item.hour -= 1
-                                }
+                              
+                            }
+                            if item.minute <= 0{
+                                item.minute += 60
+                                item.hour -= 1
+                                
+                            }
+                            
+                            if item.minute >= 60{
+                                item.minute -= 60
+                                item.hour += 1
+                            }
+                            
+                            if item.hour <= 0{
+                                item.hour += 24
                             }
                             timeZoneList.append(item)
                         } else if sign == "-"  {
                             item.hour -= Int(String(abbreviation.split(separator: ":")[0]))!
-                            if item.hour < 0 {
-                                item.hour += 24
-                            } else if item.hour > 24 {
-                                item.hour -= 24
-                            }
                             
                             if abbreviation.split(separator: ":").count == 2{
                                 item.minute -= Int(String(abbreviation.split(separator: ":")[1]))!
-                                if item.minute >= 60 {
-                                    item.minute -= 60
-                                    item.hour += 1
-                                } else if item.minute <= 0 {
-                                    item.minute += 60
-                                    item.hour -= 1
-                                }
+                            }
+                            if item.minute <= 0{
+                                item.minute += 60
+                                item.hour -= 1
+                                
+                            }
+                            
+                            if item.minute >= 60{
+                                item.minute -= 60
+                                item.hour += 1
+                            }
+                            
+                            if item.hour <= 0{
+                                item.hour += 24
                             }
                             timeZoneList.append(item)
                         } else {
