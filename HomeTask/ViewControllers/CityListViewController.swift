@@ -112,6 +112,21 @@ extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.cityNameLabel.text = cellData.cityName
         
+        if cellData.minute <= 0{
+            cellData.minute += 60
+            cellData.hour -= 1
+            
+        }
+        
+        if cellData.minute >= 60{
+            cellData.minute -= 60
+            cellData.hour += 1
+        }
+        
+        if cellData.hour <= 0{
+            cellData.hour += 24
+        }
+        
         if cellData.hour >= 10 {
             if cellData.minute >= 10 {
                 cell.cityTimeLabel.text = "\(cellData.hour):\(cellData.minute)"
