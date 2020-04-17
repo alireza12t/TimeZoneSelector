@@ -77,15 +77,15 @@ extension AddCityViewController {
     
     func showErrorView(){
         DispatchQueue.main.async {
-            if #available(iOS 13.0, *) {
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "ErrorViewController") as! ErrorViewController
-                
-                vc.errorMessage = StringHelper.duplicateErrorMessage()
-                self.present(vc, animated: true, completion: nil)
-            } else {
+//            if #available(iOS 13.0, *) {
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let vc = storyboard.instantiateViewController(withIdentifier: "ErrorViewController") as! ErrorViewController
+//
+//                vc.errorMessage = StringHelper.duplicateErrorMessage()
+//                self.present(vc, animated: true, completion: nil)
+//            } else {
                 self.performSegue(withIdentifier: "ErrorSegue", sender: self)
-            }
+//            }
         }
     }
     
