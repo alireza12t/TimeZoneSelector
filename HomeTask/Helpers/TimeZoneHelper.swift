@@ -12,6 +12,37 @@ import Foundation
 
 class TimeZoneHelper {
     class func makeTimeZoneList() -> [CityTime]{
+        var currentTimeZoneAbbreviation = TimeZone(abbreviation: TimeZone.current.identifier)?.abbreviation()
+        var currentHour = 0
+        var currentMinute = 0
+        currentTimeZoneAbbreviation?.removeFirst()
+        currentTimeZoneAbbreviation?.removeFirst()
+        currentTimeZoneAbbreviation?.removeFirst()
+        if currentTimeZoneAbbreviation != ""{
+            let sign = currentTimeZoneAbbreviation?.removeFirst()
+            if sign == "+" {
+                switch currentTimeZoneAbbreviation?.split(separator: ":").count {
+                case 1:
+                    currentHour = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[0])!))!
+                case 2:
+                    currentHour = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[0])!))!
+                    currentMinute = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[1])!))!
+                default:
+                    break
+                }
+            } else if sign == "-" {
+                switch currentTimeZoneAbbreviation?.split(separator: ":").count {
+                case 1:
+                    currentHour = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[0])!))!
+                case 2:
+                    currentHour = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[0])!))!
+                    currentMinute = -Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[1])!))!
+                default:
+                    break
+                }
+            }
+        }
+
         var timeZoneList: [CityTime] = []
         for tz in TimeZone.knownTimeZoneIdentifiers {
             let timeZone = TimeZone(identifier: tz)
@@ -19,8 +50,8 @@ class TimeZoneHelper {
                 let item = CityTime()
                 let date = Date()
                 let calendar = Calendar.current
-                item.hour = calendar.component(.hour, from: date)
-                item.minute = calendar.component(.minute, from: date)
+                item.hour = calendar.component(.hour, from: date) + currentHour
+                item.minute = calendar.component(.minute, from: date) + currentMinute
                 
                 if tz.split(separator: "/").count == 2{
                     item.cityName = String(tz.split(separator: "/")[1])
