@@ -12,31 +12,31 @@ import Foundation
 
 class TimeZoneHelper {
     class func makeTimeZoneList() -> [CityTime]{
-        var currentTimeZoneAbbreviation = TimeZone(abbreviation: TimeZone.current.identifier)?.abbreviation()
+        var currentTimeZoneAbbreviation = TimeZone.current.abbreviation()!
         var currentHour = 0
         var currentMinute = 0
-        currentTimeZoneAbbreviation?.removeFirst()
-        currentTimeZoneAbbreviation?.removeFirst()
-        currentTimeZoneAbbreviation?.removeFirst()
+        currentTimeZoneAbbreviation.removeFirst()
+        currentTimeZoneAbbreviation.removeFirst()
+        currentTimeZoneAbbreviation.removeFirst()
         if currentTimeZoneAbbreviation != ""{
-            let sign = currentTimeZoneAbbreviation?.removeFirst()
+            let sign = currentTimeZoneAbbreviation.removeFirst()
             if sign == "+" {
-                switch currentTimeZoneAbbreviation?.split(separator: ":").count {
+                switch currentTimeZoneAbbreviation.split(separator: ":").count {
                 case 1:
-                    currentHour = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[0])!))!
+                    currentHour = -Int(String((currentTimeZoneAbbreviation.split(separator: ":")[0])))!
                 case 2:
-                    currentHour = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[0])!))!
-                    currentMinute = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[1])!))!
+                    currentHour = -Int(String((currentTimeZoneAbbreviation.split(separator: ":")[0])))!
+                    currentMinute = -Int(String((currentTimeZoneAbbreviation.split(separator: ":")[1])))!
                 default:
                     break
                 }
             } else if sign == "-" {
-                switch currentTimeZoneAbbreviation?.split(separator: ":").count {
+                switch currentTimeZoneAbbreviation.split(separator: ":").count {
                 case 1:
-                    currentHour = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[0])!))!
+                    currentHour = +Int(String((currentTimeZoneAbbreviation.split(separator: ":")[0])))!
                 case 2:
-                    currentHour = Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[0])!))!
-                    currentMinute = -Int(String((currentTimeZoneAbbreviation?.split(separator: ":")[1])!))!
+                    currentHour = +Int(String((currentTimeZoneAbbreviation.split(separator: ":")[0])))!
+                    currentMinute = +Int(String((currentTimeZoneAbbreviation.split(separator: ":")[1])))!
                 default:
                     break
                 }
