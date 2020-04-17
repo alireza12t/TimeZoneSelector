@@ -115,6 +115,7 @@ extension AddCityViewController {
             if AddCityViewController.citiesList.contains(response) {
                 showErrorView()
             } else {
+                timeZoneList = TimeZoneHelper.makeTimeZoneList()
                 AddCityViewController.citiesList.append(response)
                 NotificationCenter.default.post(name: NSNotification.Name("UpdateTableView"), object: nil)
                 DialogueHelper.showStatusBarErrorMessage(errorMessageStr: StringHelper.cityAdded(), .orange)

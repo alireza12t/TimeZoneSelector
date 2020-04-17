@@ -21,13 +21,19 @@ class TimeZoneHelper {
                 let calendar = Calendar.current
                 item.hour = calendar.component(.hour, from: date)
                 item.minute = calendar.component(.minute, from: date)
+                
                 if tz.split(separator: "/").count == 2{
                     item.cityName = String(tz.split(separator: "/")[1])
+                    print("city => \(item.cityName) => \(abbreviation)")
+                    if abbreviation == "GMT" {
+                         timeZoneList.append(item)
+                    } else {
                     abbreviation.removeFirst()
                     abbreviation.removeFirst()
                     abbreviation.removeFirst()
                     if abbreviation.split(separator: ":").count > 0 {
                         let sign = abbreviation.removeFirst()
+                        print("current time =>  \(item.hour):\(item.minute), GMT => \(abbreviation.split(separator: ":"))")
                         if sign == "+" {
                             item.hour += Int(String(abbreviation.split(separator: ":")[0]))!
                             if item.hour < 0 {
@@ -73,6 +79,7 @@ class TimeZoneHelper {
                             }
                         }
                     }
+                }
                 }
             }
         }
